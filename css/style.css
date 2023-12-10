@@ -10,6 +10,8 @@
   --gray: #7b7b7b;
   --light-blue: #2a489e;
   --button-hover: #6366f1;
+  --main-font: "Play", sans-serif;
+  --sub-font: "Inter", sans-serif;
 }
 
 body {
@@ -186,6 +188,77 @@ nav .right-div .fa-bars-staggered {
   justify-content: center;
   flex-direction: column;
 }
+
+.fa-facebook-messenger {
+  position: fixed;
+  right: 30px;
+  bottom: 1rem;
+}
 /*************************************************************************************************
 Hero Section end 
+**************************************************************************************************/
+
+/*************************************************************************************************
+Message Section start
+**************************************************************************************************/
+
+#message {
+  width: 100%;
+  min-height: 100dvh;
+  background-image: url(../images/Message\ background.png);
+  background-position: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#message .txt-div {
+  /* border: 1px solid #fff; */
+  width: 50%;
+  height: 100dvh;
+  padding-left: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#message .txt-div h1 {
+  font-size: 3.125rem;
+  font-family: var(--main-font);
+  color: var(--white);
+}
+
+#message .txt-div h2 {
+  font-size: 1.25rem;
+  font-family: var(--sub-font);
+  color: var(--white);
+}
+
+#message .txt-div p {
+  font-size: 1.125rem;
+  font-family: var(--sub-font);
+  font-weight: 300;
+  color: var(--white);
+  padding-top: 20px;
+  width: 33.875rem;
+  text-align: justify;
+}
+
+#message .img-div {
+  /* border: 1px solid #fff; */
+  width: 50%;
+  height: 100dvh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*************************************************************************************************
+Message Section end 
 **************************************************************************************************/
