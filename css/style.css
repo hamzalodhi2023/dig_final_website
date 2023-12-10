@@ -9,9 +9,55 @@
   --white: #ffffff;
   --gray: #7b7b7b;
   --light-blue: #2a489e;
+  --button-hover: #6366f1;
 }
+
 body {
   background-color: var(--body-color);
+}
+
+body a {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-flex;
+  padding: 0.625rem 1.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background-color: var(--light-blue);
+  color: var(--white);
+  border-radius: 5px;
+  font-family: "Play", sans-serif;
+  transition: 0.6s;
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+}
+
+.social {
+  /* border: 1px solid #000; */
+  font-size: 1.1875rem;
+  color: var(--white);
+  background-color: var(--light-blue);
+  border-radius: 0.625rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 0.56rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.2);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 /*************************************************************************************************
@@ -23,9 +69,11 @@ Hero Section start
   width: 100%;
   max-height: 100dvh;
   overflow: hidden;
+  position: relative;
 }
 
-#hero img {
+#hero .slider-img,
+#hero .slider-1img {
   /* border: 1px solid #f00; */
   height: 100vh;
   width: 100%;
@@ -46,6 +94,97 @@ Hero Section start
   100% {
     opacity: 1;
   }
+}
+
+nav {
+  /* border: 1px solid #f00; */
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .left-div {
+  /* border: 1px solid #fff; */
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav .left-div .logo {
+  /* border: 1px solid #f00; */
+  width: 3.75rem;
+}
+
+nav .left-div h1 {
+  /* border: 1px solid #fff; */
+  color: var(--white);
+  font-size: 1.563rem;
+  font-family: "Play", sans-serif;
+  padding-left: 7px;
+}
+
+nav .right-div {
+  /* border: 1px solid #fff; */
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav .right-div .fa-bars-staggered {
+  /* border: 1px solid #fff; */
+  color: var(--white);
+  font-size: 3.01119rem;
+}
+
+.header-txt {
+  /* border: 1px solid #000; */
+  color: var(--white);
+  position: absolute;
+  top: 10.94rem;
+  left: 30px;
+}
+
+.header-txt h1 {
+  font-family: "Play", sans-serif;
+  width: 22.687rem;
+  font-size: 3.8125rem;
+}
+
+.header-txt p {
+  font-family: "Inter", sans-serif;
+  width: 28.625rem;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+.header-txt a {
+  margin-top: 0.5rem;
+}
+
+.header-social {
+  /* border: 1px solid #fff; */
+  position: absolute;
+  top: 11.75rem;
+  right: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 /*************************************************************************************************
 Hero Section end 

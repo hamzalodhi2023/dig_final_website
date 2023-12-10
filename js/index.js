@@ -1,4 +1,4 @@
-const imgs = document.querySelectorAll("#hero .img");
+const imgs = document.querySelectorAll("#hero .slider-img");
 const sliderImg = document.querySelector("#hero img.animation");
 let currentImgIndex = 0;
 
