@@ -457,20 +457,21 @@ Tenant Section start
   width: 30.875rem;
 }
 
-#tenant p {
-  /* border: 1px solid #fff; */
-  font-size: 1rem;
-  font-weight: 200;
-  color: var(--white);
-  font-family: var(--sub-font);
-}
-
 #tenant h1 {
   /* border: 1px solid #fff; */
   font-size: 3.125rem;
   font-weight: 500;
   font-family: var(--sub-font);
   color: var(--white);
+  margin-bottom: 1rem;
+}
+
+#tenant p {
+  /* border: 1px solid #fff; */
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(--white);
+  font-family: var(--sub-font);
 }
 
 /*************************************************************************************************
