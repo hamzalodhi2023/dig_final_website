@@ -419,6 +419,60 @@ Latest events Section start
   align-items: center;
   justify-content: center;
 }
+
 /*************************************************************************************************
 Latest events Section end
+**************************************************************************************************/
+
+/*************************************************************************************************
+Tenant Section start
+**************************************************************************************************/
+
+#tenant {
+  /* border: 1px solid #fff; */
+  width: 100%;
+  min-height: 100dvh;
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#tenant img {
+  /* border: 1px solid #fff; */
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#tenant .tenant-txt-div {
+  /* border: 1px solid #fff; */
+  position: absolute;
+  margin-left: 30px;
+  width: 30.875rem;
+}
+
+#tenant p {
+  /* border: 1px solid #fff; */
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(--white);
+  font-family: var(--sub-font);
+}
+
+#tenant h1 {
+  /* border: 1px solid #fff; */
+  font-size: 3.125rem;
+  font-weight: 500;
+  font-family: var(--sub-font);
+  color: var(--white);
+}
+
+/*************************************************************************************************
+Tenant Section end
 **************************************************************************************************/
