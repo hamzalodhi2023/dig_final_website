@@ -351,6 +351,74 @@ Services Section start
   text-align: center;
   color: var(--white);
 }
+
 /*************************************************************************************************
 Services Section end 
+**************************************************************************************************/
+
+/*************************************************************************************************
+Latest events Section start
+**************************************************************************************************/
+
+#latest-event {
+  /* border: 1px solid #fff; */
+  width: 100%;
+  min-height: 100dvh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#latest-event h1 {
+  /* border: 1px solid #fff; */
+  font-size: 3.125rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--white);
+  font-family: var(--main-font);
+  margin-bottom: 2.56rem;
+}
+
+#latest-event .event-div {
+  /* border: 1px solid #fff; */
+  width: 100%;
+  padding: 0px 30px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#latest-event .event-div .event {
+  /* border: 1px solid #fff; */
+  width: 25rem;
+  height: 21.875rem;
+  border-radius: 1.25rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+#latest-event .event-div .event .event-txt-div {
+  /* border: 1px solid #f00; */
+  height: 6.25rem;
+  width: 100%;
+  border-radius: 0rem 0rem 1.25rem 1.25rem;
+  background-color: var(--light-blue);
+  color: var(--white);
+  font-family: var(--sub-font);
+  text-align: center;
+  font-size: 1.575rem;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*************************************************************************************************
+Latest events Section end
 **************************************************************************************************/
