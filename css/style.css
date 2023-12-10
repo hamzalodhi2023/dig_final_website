@@ -193,6 +193,26 @@ nav .right-div .fa-bars-staggered {
   position: fixed;
   right: 30px;
   bottom: 1rem;
+  z-index: 9;
+  /* border: 1px solid #000; */
+  font-size: 1.1875rem;
+  color: var(--white);
+  background-color: #09c6fe;
+  border-radius: 0.625rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 0.56rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-facebook-messenger:hover {
+  transform: scale(1.2);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 /*************************************************************************************************
 Hero Section end 
@@ -261,4 +281,76 @@ Message Section start
 
 /*************************************************************************************************
 Message Section end 
+**************************************************************************************************/
+
+/*************************************************************************************************
+Services Section start
+**************************************************************************************************/
+#services {
+  /* border: 1px solid #000; */
+  width: 100%;
+  min-height: 100dvh;
+}
+
+#services h1 {
+  /* border: 1px solid #fff; */
+  font-size: 3.125rem;
+  font-weight: 600;
+  font-family: var(--main-font);
+  text-align: center;
+  color: var(--white);
+  padding-bottom: 1.38rem;
+}
+
+#services .service-div {
+  /* border: 1px solid #fff; */
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#services .service-div .service {
+  /* border: 1px solid #fff; */
+  background-color: var(--light-blue);
+  width: 25rem;
+  height: 15.625rem;
+  border-radius: 20px;
+  margin-bottom: 1.38rem;
+  padding: 0px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#services .service-div .service:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.05);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+#services .service-div .service h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: var(--sub-font);
+  color: var(--white);
+}
+
+#services .service-div .service p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-family: var(--sub-font);
+  text-align: center;
+  color: var(--white);
+}
+/*************************************************************************************************
+Services Section end 
 **************************************************************************************************/
