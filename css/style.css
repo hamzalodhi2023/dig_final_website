@@ -208,6 +208,7 @@ nav .right-div .fa-bars-staggered {
   /* border: 1px solid #fff; */
   color: var(--white);
   font-size: 3.01119rem;
+  cursor: pointer;
 }
 
 .header-txt {
