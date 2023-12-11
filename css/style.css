@@ -209,6 +209,11 @@ nav .right-div .fa-bars-staggered {
   color: var(--white);
   font-size: 3.01119rem;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+nav .right-div .fa-bars-staggered:hover {
+  color: var(--button-hover);
 }
 
 .header-txt {
