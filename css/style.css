@@ -77,7 +77,7 @@ Hero Section start
 **************************************************************************************************/
 
 #hero {
-  /* border: 1px solid #f00; */
+  /* border: 1px solid #fff; */
   width: 100%;
   max-height: 100dvh;
   overflow: hidden;
@@ -241,6 +241,7 @@ Message Section start
 **************************************************************************************************/
 
 #message {
+  /* border: 1px solid #fff; */
   width: 100%;
   min-height: 100dvh;
   background-image: url(../images/Message\ background.png);
@@ -299,6 +300,11 @@ Message Section start
   justify-content: center;
 }
 
+#message .img-div img {
+  /* border: 1px solid #fff; */
+  width: 90%;
+}
+
 /*************************************************************************************************
 Message Section end 
 **************************************************************************************************/
@@ -341,6 +347,8 @@ Services Section start
   height: 15.625rem;
   border-radius: 20px;
   margin-bottom: 1.38rem;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 0px 40px;
 
   display: flex;
@@ -414,6 +422,7 @@ Latest events Section start
 
 #latest-event .event-div .event {
   /* border: 1px solid #fff; */
+  background-color: var(--light-blue);
   width: 25rem;
   height: 21.875rem;
   border-radius: 1.25rem;
@@ -427,6 +436,10 @@ Latest events Section start
   flex-direction: column;
 }
 
+#latest-event .event-div .event img {
+  width: 100%;
+}
+
 #latest-event .event-div .event:hover {
   transform: scale(1.05);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
@@ -437,7 +450,6 @@ Latest events Section start
   height: 6.25rem;
   width: 100%;
   border-radius: 0rem 0rem 1.25rem 1.25rem;
-  background-color: var(--light-blue);
   color: var(--white);
   font-family: var(--sub-font);
   text-align: center;
@@ -460,7 +472,7 @@ Tenant Section start
 #tenant {
   /* border: 1px solid #fff; */
   width: 100%;
-  min-height: 100dvh;
+  max-height: 100dvh;
   position: relative;
 
   display: flex;
@@ -584,11 +596,14 @@ Footer Section start
 /*************************************************************************************************
 Footer Section end
 **************************************************************************************************/
-
 /*************************************************************************************************
-Responsive start
+Media start
 **************************************************************************************************/
-
+@media only screen and (max-width: 1920px) and (min-width: 1440px) {
+  html {
+    font-size: 20px;
+  }
+}
 /*************************************************************************************************
-Responsive end
+Media end
 **************************************************************************************************/
