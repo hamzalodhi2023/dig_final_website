@@ -128,8 +128,8 @@ Hero Section start
   /* border: 1px solid #fff; */
   width: 100%;
   max-height: 100dvh;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 #hero .slider-img,
@@ -344,6 +344,7 @@ Services Section start
   /* border: 1px solid #000; */
   width: 100%;
   min-height: 100dvh;
+  overflow: hidden;
 }
 
 #services h1 {
