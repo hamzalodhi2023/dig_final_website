@@ -387,6 +387,7 @@ Services Section start
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
+  overflow: hidden;
 
   display: flex;
   justify-content: space-evenly;
