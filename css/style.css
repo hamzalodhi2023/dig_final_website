@@ -253,32 +253,6 @@ nav .right-div .fa-bars-staggered:hover {
   flex-direction: column;
 }
 
-.fa-facebook-messenger {
-  position: fixed;
-  right: 30px;
-  bottom: 1rem;
-  z-index: 9;
-  /* border: 1px solid #000; */
-  font-size: 1.1875rem;
-  color: var(--white);
-  background-color: #09c6fe;
-  border-radius: 0.625rem;
-  width: 3.125rem;
-  height: 3.125rem;
-  transition: 0.5s;
-  cursor: pointer;
-  margin: 0.56rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.fa-facebook-messenger:hover {
-  transform: scale(1.2);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-}
-
 .fa-arrow-up {
   /* border: 1px solid #000; */
   position: fixed;
