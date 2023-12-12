@@ -422,6 +422,7 @@ Latest events Section start
   /* border: 1px solid #fff; */
   width: 100%;
   min-height: 100dvh;
+  overflow: hidden;
 
   display: flex;
   align-items: center;
@@ -443,6 +444,7 @@ Latest events Section start
   /* border: 1px solid #fff; */
   width: 100%;
   padding: 0px 30px;
+  overflow: hidden;
 
   display: flex;
   justify-content: space-evenly;
