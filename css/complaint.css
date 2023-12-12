@@ -22,7 +22,7 @@
 
 body {
   background-color: var(--body-color);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 html {
@@ -86,7 +86,7 @@ Hero Section start
 **************************************************************************************************/
 
 #complaint {
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   min-height: 100dvh;
   width: 100%;
   overflow: hidden;
