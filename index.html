@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DIGP SOUTH ZONE KARACHI</title>
     <!--------------------------------------------------------------------------------------------------
+     Animation.css  start
+    ---------------------------------------------------------------------------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--------------------------------------------------------------------------------------------------
+     Animation.css  end
+    ---------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------
      FONT Awesome start
     ---------------------------------------------------------------------------------------------------->
     <link
@@ -89,16 +99,26 @@
       <img class="slider-img" src="images/WCPC.webp" alt="" />
       <nav>
         <div class="left-div">
-          <img src="images/logo.png" alt="LOGO" class="logo" />
-          <h1>DIGP SOUTH ZONE KARACHI</h1>
+          <img
+            src="images/logo.png"
+            alt="LOGO"
+            class="logo animate__animated wow animate__fadeInDown"
+          />
+          <h1 class="animate__animated wow animate__fadeInDown">
+            DIGP SOUTH ZONE KARACHI
+          </h1>
         </div>
         <div class="right-div">
-          <i class="fa-solid fa-bars-staggered"></i>
+          <i
+            class="fa-solid fa-bars-staggered animate__animated wow animate__fadeInRight"
+          ></i>
         </div>
       </nav>
       <div class="header-txt">
-        <h1>YOUR SAFETY IS OUR PROUD</h1>
-        <p>
+        <h1 class="animate__animated wow animate__fadeInLeft">
+          YOUR SAFETY IS OUR PROUD
+        </h1>
+        <p class="animate__animated wow animate__fadeInLeft">
           Protecting and serving the community. Enforcing laws and maintaining
           order. Preventing and investigating crimes. Responding to emergencies
           and providing assistance. Conducting patrols to deter criminal
@@ -106,9 +126,11 @@
           Mediating disputes and resolving conflicts. Building trust and
           fostering community relationships.
         </p>
-        <a href="" class="button">Read More</a>
+        <a href="" class="button animate__animated wow animate__fadeInLeft"
+          >Read More</a
+        >
       </div>
-      <div class="header-social">
+      <div class="header-social animate__animated wow animate__fadeInRight">
         <a
           href="https://www.facebook.com/mediacelldigsouthzone/"
           target="_blank"
@@ -128,15 +150,17 @@
           ><i class="fa-brands fa-instagram social"></i
         ></a>
       </div>
-      <div>
-        <i
-          page_id="101348731248853"
-          attribution="biz_inbox"
-          class="fa-brands fa-facebook-messenger"
-          title="TO GET ANY INFORMATION"
-        ></i>
-      </div>
-      <a href="#hero"><i class="fa-solid fa-arrow-up social"></i></a>
+
+      <i
+        class="fa-brands fa-facebook-messenger animate__animated wow animate__fadeInUp"
+        title="TO GET ANY INFORMATION"
+      ></i>
+
+      <a href="#hero"
+        ><i
+          class="fa-solid fa-arrow-up social animate__animated wow animate__fadeInUp"
+        ></i
+      ></a>
     </section>
     <!--------------------------------------------------------------------------------------------------
      Hero section end
@@ -145,7 +169,7 @@
      Message section start
     ---------------------------------------------------------------------------------------------------->
     <section id="message">
-      <div class="txt-div">
+      <div class="txt-div animate__animated wow animate__zoomIn">
         <h1>Syed Asad Raza (PSP)</h1>
         <h2>DIGP South Zone Karachi</h2>
         <p>
@@ -159,7 +183,11 @@
         </p>
       </div>
       <div class="img-div">
-        <img src="images/dig photo message.png" alt="" />
+        <img
+          src="images/dig photo message.png"
+          alt=""
+          class="animate__animated wow animate__zoomIn"
+        />
       </div>
     </section>
     <!--------------------------------------------------------------------------------------------------
@@ -315,4 +343,13 @@
     ---------------------------------------------------------------------------------------------------->
   </body>
   <script src="js/index.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    new WOW().init();
+  </script>
 </html>
