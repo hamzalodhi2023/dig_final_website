@@ -16,7 +16,7 @@ function showImage() {
   currentImgIndex = (currentImgIndex + 1) % imgs.length;
 }
 
-setInterval(showImage, 7000);
+setInterval(showImage, 9000);
 
 /****************************************************************
  * Slider Logic End
