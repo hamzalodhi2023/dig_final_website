@@ -547,11 +547,11 @@ SpeakUp Section start
   font-size: 2rem;
   color: var(--white);
   font-family: var(--sub-font);
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 #speakup .speakup-txt-main-div a {
-  margin-left: 50px;
+  margin-left: 30px;
   margin-top: 20px;
 }
 /*************************************************************************************************
