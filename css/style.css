@@ -128,7 +128,7 @@ Hero Section start
 #hero {
   /* border: 1px solid #fff; */
   width: 100%;
-  max-height: 100vh;
+  max-height: 100dvh;
   position: relative;
   overflow: hidden;
 }
@@ -499,7 +499,6 @@ Latest events Section start
 /*************************************************************************************************
 Latest events Section end
 **************************************************************************************************/
-
 /*************************************************************************************************
 SpeakUp Section start
 **************************************************************************************************/
@@ -514,13 +513,6 @@ SpeakUp Section start
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#speakup .img-div {
-  /* border: 1px solid #000; */
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
 #speakup img {
