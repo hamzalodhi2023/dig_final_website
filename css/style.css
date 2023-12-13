@@ -128,7 +128,7 @@ Hero Section start
 #hero {
   /* border: 1px solid #fff; */
   width: 100%;
-  max-height: 100dvh;
+  max-height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -235,7 +235,7 @@ nav .right-div .fa-bars-staggered:hover {
   font-family: "Inter", sans-serif;
   width: 28.625rem;
   font-size: 0.8rem;
-  font-weight: 200;
+  font-weight: 800;
   line-height: 20px;
 }
 
