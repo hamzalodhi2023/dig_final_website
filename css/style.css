@@ -549,6 +549,11 @@ SpeakUp Section start
   font-family: var(--sub-font);
   margin-left: 40px;
 }
+
+#speakup .speakup-txt-main-div a {
+  margin-left: 50px;
+  margin-top: 20px;
+}
 /*************************************************************************************************
 SpeakUp Section end
 **************************************************************************************************/
