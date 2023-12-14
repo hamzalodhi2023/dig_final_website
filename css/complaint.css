@@ -203,10 +203,21 @@ nav .right-div .fa-bars-staggered:hover {
   color: var(--button-hover);
 }
 
+.main-div-of-txt-and-form {
+  /* border: 1px solid #fff; */
+  width: 100%;
+  min-height: 90dvh;
+  padding-top: 30px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
 .txt-div {
   /* border: 1px solid #f00; */
-  width: 100%;
-  height: 50vh;
+  width: 30%;
+  height: 100%;
   padding-left: 30px;
 
   display: flex;
@@ -218,14 +229,14 @@ nav .right-div .fa-bars-staggered:hover {
 .txt-div h1 {
   /* border: 1px solid #fff; */
   width: 22.687rem;
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--white);
   font-family: var(--main-font);
 }
 
 .txt-div h3 {
   /* border: 1px solid #fff; */
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--white);
   font-family: var(--main-font);
   margin-left: 30px;
@@ -233,7 +244,7 @@ nav .right-div .fa-bars-staggered:hover {
 
 .txt-div ul {
   /* border: 1px solid #fff; */
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--white);
   font-family: var(--sub-font);
   margin-left: 30px;
@@ -241,7 +252,7 @@ nav .right-div .fa-bars-staggered:hover {
 
 .form-div {
   /* border: 1px solid #fff; */
-  width: 100%;
+  width: 70%;
   min-height: 100vh;
   padding: 30px;
 
@@ -253,7 +264,7 @@ nav .right-div .fa-bars-staggered:hover {
 
 .form-div .field-div {
   /* border: 1px solid #fff; */
-  width: 60%;
+  width: 100%;
   height: 5rem;
   margin-bottom: 2rem;
 
@@ -285,7 +296,7 @@ nav .right-div .fa-bars-staggered:hover {
 
 .form-div .txt-area {
   /* border: 1px solid #fff; */
-  width: 60%;
+  width: 100%;
   height: 15rem;
 
   display: flex;
@@ -295,14 +306,14 @@ nav .right-div .fa-bars-staggered:hover {
 }
 
 .form-div .txt-area span {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--white);
   font-family: var(--sub-font);
 }
 
 .form-div .txt-area textarea {
   background-color: var(--button-hover);
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--white);
   font-family: var(--sub-font);
   width: 100%;
