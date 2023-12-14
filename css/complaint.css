@@ -206,7 +206,7 @@ nav .right-div .fa-bars-staggered:hover {
 .txt-div {
   /* border: 1px solid #f00; */
   width: 100%;
-  height: 90vh;
+  height: 50vh;
   padding-left: 30px;
 
   display: flex;
@@ -273,7 +273,7 @@ nav .right-div .fa-bars-staggered:hover {
   font-size: 1.5rem;
   color: var(--white);
   font-family: var(--sub-font);
-  width: 21rem;
+  width: 25rem;
   height: 3rem;
   padding-left: 30px;
   outline: none;
