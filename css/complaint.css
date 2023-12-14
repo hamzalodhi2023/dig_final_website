@@ -242,7 +242,7 @@ nav .right-div .fa-bars-staggered:hover {
 .form-div {
   /* border: 1px solid #fff; */
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 30px;
 
   display: flex;
@@ -253,12 +253,14 @@ nav .right-div .fa-bars-staggered:hover {
 
 .form-div .field-div {
   /* border: 1px solid #fff; */
-  width: 60rem;
+  width: 90%;
   height: 5rem;
+  margin-bottom: 2rem;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .form-div .field-div span {
@@ -273,7 +275,7 @@ nav .right-div .fa-bars-staggered:hover {
   font-size: 1.5rem;
   color: var(--white);
   font-family: var(--sub-font);
-  width: 25rem;
+  width: 100%;
   height: 3rem;
   padding-left: 30px;
   outline: none;
@@ -283,7 +285,7 @@ nav .right-div .fa-bars-staggered:hover {
 
 .form-div .txt-area {
   /* border: 1px solid #fff; */
-  width: 60rem;
+  width: 90%;
   height: 15rem;
 
   display: flex;
@@ -293,7 +295,7 @@ nav .right-div .fa-bars-staggered:hover {
 }
 
 .form-div .txt-area span {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--white);
   font-family: var(--sub-font);
 }
