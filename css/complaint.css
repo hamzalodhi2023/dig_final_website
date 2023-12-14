@@ -253,7 +253,7 @@ nav .right-div .fa-bars-staggered:hover {
 
 .form-div .field-div {
   /* border: 1px solid #fff; */
-  width: 90%;
+  width: 60%;
   height: 5rem;
   margin-bottom: 2rem;
 
@@ -285,7 +285,7 @@ nav .right-div .fa-bars-staggered:hover {
 
 .form-div .txt-area {
   /* border: 1px solid #fff; */
-  width: 90%;
+  width: 60%;
   height: 15rem;
 
   display: flex;
