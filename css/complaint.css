@@ -144,6 +144,10 @@ Hero Section start
   min-height: 100dvh;
   width: 100%;
   overflow: hidden;
+
+  background-image: url(../images/complaint.webp);
+  background-position: center;
+  background-size: cover;
 }
 
 nav {
