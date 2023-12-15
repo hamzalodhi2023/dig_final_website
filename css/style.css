@@ -132,7 +132,7 @@ body a {
 }
 
 .hamburger-container ul a li:hover {
-  color: var(--light-blue);
+  color: var(--button-hover);
 }
 
 .button {
