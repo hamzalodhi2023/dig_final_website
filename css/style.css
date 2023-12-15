@@ -570,7 +570,7 @@ Latest events POPUP Section start
   background-color: rgba(0, 0, 0, 0.589);
   backdrop-filter: blur(3px);
 
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
