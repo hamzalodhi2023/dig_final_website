@@ -480,6 +480,8 @@ Latest events Section start
   width: 100%;
   min-height: 100dvh;
   overflow: hidden;
+  position: relative;
+  z-index: 99;
 
   display: flex;
   align-items: center;
@@ -553,6 +555,66 @@ Latest events Section start
 /*************************************************************************************************
 Latest events Section end
 **************************************************************************************************/
+
+/*************************************************************************************************
+Latest events POPUP Section start
+**************************************************************************************************/
+#event-popup {
+  /* border: 1px solid #fff; */
+  width: 100;
+  min-height: 100dvh;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.589);
+  backdrop-filter: blur(3px);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+#event-popup img {
+  width: 30rem;
+}
+
+#event-popup h3 {
+  font-size: 3rem;
+  font-family: var(--main-font);
+  color: var(--white);
+  text-align: center;
+}
+
+#event-popup p {
+  font-size: 1.5rem;
+  font-family: var(--sub-font);
+  color: var(--white);
+  text-align: center;
+  font-weight: 200;
+}
+
+#event-popup .fa-xmark {
+  /* border: 1px solid #fff; */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--white);
+  font-size: 2rem;
+  padding: 10px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+#event-popup .fa-xmark:hover {
+  color: red;
+}
+
+/*************************************************************************************************
+Latest events POPUP Section end
+**************************************************************************************************/
+
 /*************************************************************************************************
 SpeakUp Section start
 **************************************************************************************************/
