@@ -564,15 +564,16 @@ Latest events POPUP Section start
   min-height: 100dvh;
   padding: 30px;
   position: fixed;
-  top: 0;
+  top: 100%;
   left: 0;
   background-color: rgba(0, 0, 0, 0.589);
   backdrop-filter: blur(3px);
 
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  transition: 0.5s;
 }
 
 #event-popup img {

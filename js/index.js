@@ -47,3 +47,35 @@ function HamburgerClosing() {
 /****************************************************************
  * Hamburger Logic End
  ****************************************************************/
+/****************************************************************
+ * Latest Events Popup Logic Start
+ ****************************************************************/
+
+let popup = document.querySelector("#event-popup");
+let latestEventCard = document.querySelectorAll(".event");
+let popupClosingIcon = document.querySelector(".popup-closing-icon");
+let popupImg = popup.querySelector("img");
+let popupTitle = popup.querySelector("h3");
+let popupAbout = popup.querySelector("p");
+
+popupClosingIcon.addEventListener("click", () => {
+  popup.style.top = "100%";
+});
+
+latestEventCard.forEach((element) => {
+  element.addEventListener("click", () => {
+    popup.style.top = "0%";
+
+    let cardImg = element.querySelector("img");
+    let cardTitle = element.querySelector(".event-txt-div p");
+    let cardAbout = element.querySelector(".event-txt-div .about-news");
+
+    popupImg.src = cardImg.src;
+    popupTitle.textContent = cardTitle.textContent;
+    popupAbout.textContent = cardAbout.textContent;
+  });
+});
+
+/****************************************************************
+ * Latest Events Popup Logic End
+ ****************************************************************/
