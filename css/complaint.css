@@ -176,6 +176,7 @@ nav .left-div {
 nav .left-div .logo {
   /* border: 1px solid #f00; */
   width: 3.75rem;
+  cursor: pointer;
 }
 
 nav .left-div h1 {
