@@ -34,7 +34,7 @@ body a {
 }
 
 .hamburger-container {
-  border: 1px solid #f00;
+  /* border: 1px solid #f00; */
   background-color: #00000098;
   height: 100dvh;
   width: 100%;
@@ -566,6 +566,7 @@ Latest events POPUP Section start
   position: fixed;
   top: 100%;
   left: 0;
+  z-index: 999;
   background-color: rgba(0, 0, 0, 0.589);
   backdrop-filter: blur(3px);
 
