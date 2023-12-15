@@ -34,7 +34,7 @@ body a {
 }
 
 .hamburger-container {
-  /* border: 1px solid #f00; */
+  border: 1px solid #f00;
   background-color: #00000098;
   height: 100dvh;
   width: 100%;
@@ -481,7 +481,6 @@ Latest events Section start
   min-height: 100dvh;
   overflow: hidden;
   position: relative;
-  z-index: 99;
 
   display: flex;
   align-items: center;
