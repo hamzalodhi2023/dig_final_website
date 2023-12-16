@@ -112,10 +112,10 @@ complaintForm.addEventListener("submit", (e) => {
           "*SUBJECT* : " +
           data.get("complaintType") +
           "%0a" +
-          "*COMPLAINT DETAILS* : " +
+          "*COMPLAINT DETAILS* : " + "%0a" +
           data.get("shortBrief") +
           "%0a" +
-          "*COMPLAINT DATE* : " +
+          "*COMPLAINT DATE* : " +"%0a" +
           data.get("time");
 
         window.open(whatsappMessage, "_blank");
