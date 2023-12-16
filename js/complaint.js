@@ -100,7 +100,7 @@ complaintForm.addEventListener("submit", (e) => {
         }, 2000);
 
         let whatsappMessage =
-          "https://wa.me/923350020257?text=" +
+          "https://wa.me/923332186472?text=" +
           "*DSP COMPLAIN CELL, DIGP SOUTH ZONE KYC*" +
           "%0a" +
           "*NAME* : " + "%0a" +
