@@ -64,7 +64,7 @@ body a {
 }
 
 .hamburger-container i:hover {
-  color: var(--button-hover);
+  color: red;
 }
 
 .hamburger-container ul {
@@ -135,6 +135,47 @@ body a {
   color: var(--light-blue);
 }
 
+.button {
+  display: inline-flex;
+  padding: 0.625rem 1.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background-color: var(--light-blue);
+  color: var(--white);
+  border-radius: 5px;
+  font-family: var(--main-font);
+  transition: 0.6s;
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+}
+
+.social {
+  /* border: 1px solid #000; */
+  font-size: 1.1875rem;
+  color: var(--white);
+  background-color: var(--light-blue);
+  border-radius: 0.625rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 0.56rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.2);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
 /*************************************************************************************************
 Hero Section start 
 **************************************************************************************************/
@@ -145,10 +186,9 @@ Hero Section start
   width: 100%;
   overflow: hidden;
   background-image: radial-gradient(
-    farthest-corner circle at 50% 53%,
-    #6366f1 22% 0%,
-    64%,
-    #2a489e 99% 99%
+    farthest-corner circle at 8% 30%,
+    #6366f1 0%,
+    #2a489e 100%
   );
 }
 
@@ -222,7 +262,7 @@ nav .right-div .fa-bars-staggered:hover {
 
 .txt-div {
   /* border: 1px solid #f00; */
-  width: 30%;
+  width: 40%;
   height: 100%;
   padding-left: 30px;
 
@@ -234,7 +274,7 @@ nav .right-div .fa-bars-staggered:hover {
 
 .txt-div h1 {
   /* border: 1px solid #fff; */
-  width: 22.687rem;
+  width: 23.687rem;
   font-size: 4rem;
   color: var(--white);
   font-family: var(--main-font);
@@ -242,7 +282,7 @@ nav .right-div .fa-bars-staggered:hover {
 
 .txt-div h3 {
   /* border: 1px solid #fff; */
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--white);
   font-family: var(--main-font);
   margin-left: 30px;
@@ -250,15 +290,15 @@ nav .right-div .fa-bars-staggered:hover {
 
 .txt-div ul {
   /* border: 1px solid #fff; */
-  font-size: 1rem;
+  font-size: 2rem;
   color: var(--white);
   font-family: var(--sub-font);
   margin-left: 30px;
 }
 
 .form-div {
-  /* border: 1px solid #fff; */
-  width: 70%;
+  /* border: 1px solid #f00; */
+  width: 60%;
   height: 100%;
 
   display: flex;
@@ -267,10 +307,62 @@ nav .right-div .fa-bars-staggered:hover {
   flex-direction: column;
 }
 
+.form-div form {
+  /* border: 1px solid #fff; */
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-div form .form-button-div {
+  /* border: 1px solid #fff; */
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.form-div form .form-button-div button {
+  border: 1px solid var(--button-hover);
+  outline: none;
+  background-color: transparent;
+  margin: 0;
+  font-family: var(--sub-font);
+  font-size: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 2;
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.form-div form .form-button-div button::after {
+  content: "";
+  width: 150%;
+  height: 160%;
+  position: absolute;
+  bottom: -100px;
+  background-color: var(--button-hover);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.form-div form .form-button-div button:hover:after {
+  bottom: -10%;
+}
+
 .form-div .field-div {
   /* border: 1px solid #fff; */
   width: 90%;
-  height: 4rem;
+  height: 3rem;
   margin-bottom: 1rem;
 
   display: flex;
@@ -280,19 +372,20 @@ nav .right-div .fa-bars-staggered:hover {
 }
 
 .form-div .field-div span {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--white);
   font-family: var(--sub-font);
+  margin-bottom: 5px;
 }
 
 .form-div .field-div input,
 .form-div .field-div select {
   background-color: var(--white);
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--gray);
   font-family: var(--sub-font);
   width: 100%;
-  height: 3rem;
+  height: 2rem;
   padding-left: 30px;
   outline: none;
   border: none;
@@ -302,7 +395,7 @@ nav .right-div .fa-bars-staggered:hover {
 .form-div .txt-area {
   /* border: 1px solid #fff; */
   width: 90%;
-  height: 15rem;
+  height: 10rem;
 
   display: flex;
   align-items: flex-start;
@@ -312,14 +405,15 @@ nav .right-div .fa-bars-staggered:hover {
 
 .form-div .txt-area span {
   /* border: 1px solid #000; */
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--white);
   font-family: var(--sub-font);
+  margin-bottom: 5px;
 }
 
 .form-div .txt-area textarea {
   background-color: var(--white);
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--gray);
   font-family: var(--sub-font);
   width: 100%;

@@ -64,7 +64,7 @@ body a {
 }
 
 .hamburger-container i:hover {
-  color: var(--button-hover);
+  color: red;
 }
 
 .hamburger-container ul {
@@ -575,7 +575,7 @@ Latest events POPUP Section start
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 #event-popup img {
@@ -741,8 +741,8 @@ Subscribe Section start
 
 #subscribe .subscribe-main-div button::after {
   content: "";
-  width: 250px;
-  height: 100px;
+  width: 150%;
+  height: 160%;
   position: absolute;
   bottom: -100px;
   background-color: var(--button-hover);
