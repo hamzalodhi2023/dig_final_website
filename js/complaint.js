@@ -32,6 +32,53 @@ let url =
   "https://script.google.com/macros/s/AKfycbz0UdjOz_zbYOUc_EEbYsh6W8awtTjnxP-5r_b0Lu5tdLYbjv5iiEH7dP3ZF5m-Q7HV/exec";
 let complaintForm = document.querySelector("form");
 let complaintType = document.querySelector("#complaintType");
+const dateInput = document.getElementById("date");
+
+setInterval(function () {
+  const now = new Date();
+
+  const mm = now.getMonth();
+  const dd = now.getDate();
+  const yyyy = now.getFullYear();
+
+  let hours = now.getHours();
+  let mins = now.getMinutes();
+  let secs = now.getSeconds();
+
+  if (hours < 10) {
+    hours = "0" + hours;
+  } else {
+    hours = hours;
+  }
+
+  if (mins < 10) {
+    mins = "0" + mins;
+  } else {
+    mins = mins;
+  }
+
+  if (secs < 10) {
+    secs = "0" + secs;
+  } else {
+    secs = secs;
+  }
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  dateInput.value = `${dd} ${monthNames[mm]}, ${yyyy}  ${hours} : ${mins} : ${secs}`;
+}, 1000);
 
 complaintForm.addEventListener("submit", (e) => {
   if (complaintType.value !== "") {
@@ -52,11 +99,7 @@ complaintForm.addEventListener("submit", (e) => {
         setTimeout(function () {
           e.target.btn.innerText = "Submit Complaint";
         }, 2000);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
       });
-
     e.preventDefault();
   } else {
     e.preventDefault();
