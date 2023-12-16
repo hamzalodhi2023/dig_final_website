@@ -28,11 +28,10 @@ function HamburgerClosing() {
  * DIGP SOUTH ZONE COMPLAINT - 2023 Logic Start
  ****************************************************************/
 
-let url =
+const url =
   "https://script.google.com/macros/s/AKfycbz0UdjOz_zbYOUc_EEbYsh6W8awtTjnxP-5r_b0Lu5tdLYbjv5iiEH7dP3ZF5m-Q7HV/exec";
-let complaintForm = document.querySelector("form");
-let complaintType = document.querySelector("#complaintType");
-const dateInput = document.getElementById("date");
+const dateInput = document.getElementById("time");
+const complaintForm = document.querySelector("form");
 
 setInterval(function () {
   const now = new Date();
@@ -83,15 +82,15 @@ setInterval(function () {
 complaintForm.addEventListener("submit", (e) => {
   if (complaintType.value !== "") {
     e.target.btn.innerText = "Complaint Submitting....";
+    e.preventDefault();
+
     let data = new FormData(complaintForm);
 
     fetch(url, {
       method: "POST",
       body: data,
     })
-      .then((res) => {
-        return res.text();
-      })
+      .then((res) => res.text())
       .then((finalRes) => {
         complaintForm.reset();
         e.target.btn.innerText = "Complaint Submitted!!";
@@ -99,8 +98,28 @@ complaintForm.addEventListener("submit", (e) => {
         setTimeout(function () {
           e.target.btn.innerText = "Submit Complaint";
         }, 2000);
+
+        let whatsappMessage =
+          "https://wa.me/923350020257?text=" +
+          "*DSP COMPLAIN CELL, DIGP SOUTH ZONE KYC*" +
+          "%0a" +
+          "*NAME* : " +
+          data.get("name") +
+          "%0a" +
+          "*WHATSAPP* : " +
+          data.get("whatsapp") +
+          "%0a" +
+          "*SUBJECT* : " +
+          data.get("complaintType") +
+          "%0a" +
+          "*COMPLAINT DETAILS* : " +
+          data.get("shortBrief") +
+          "%0a" +
+          "*COMPLAINT DATE* : " +
+          data.get("time");
+
+        window.open(whatsappMessage, "_blank");
       });
-    e.preventDefault();
   } else {
     e.preventDefault();
     alert("Please Select Complaint Type!!");
