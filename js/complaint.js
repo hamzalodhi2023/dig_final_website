@@ -103,13 +103,13 @@ complaintForm.addEventListener("submit", (e) => {
           "https://wa.me/923350020257?text=" +
           "*DSP COMPLAIN CELL, DIGP SOUTH ZONE KYC*" +
           "%0a" +
-          "*NAME* : " +
+          "*NAME* : " + "%0a" +
           data.get("name") +
           "%0a" +
-          "*WHATSAPP* : " +
+          "*WHATSAPP* : " + "%0a" +
           data.get("whatsapp") +
           "%0a" +
-          "*SUBJECT* : " +
+          "*SUBJECT* : " + "%0a" +
           data.get("complaintType") +
           "%0a" +
           "*COMPLAINT DETAILS* : " + "%0a" +
