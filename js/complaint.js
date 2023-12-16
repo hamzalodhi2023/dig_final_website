@@ -29,15 +29,15 @@ function HamburgerClosing() {
  ****************************************************************/
 
 let url =
-  "https://script.google.com/macros/s/AKfycbyEOR1-JpD74Ds2OQuzhi91FaOizX_2qs9fAghtRzZU_VyhDSsthaKumjaGCWbe-FI9/exec";
+  "https://script.google.com/macros/s/AKfycbz0UdjOz_zbYOUc_EEbYsh6W8awtTjnxP-5r_b0Lu5tdLYbjv5iiEH7dP3ZF5m-Q7HV/exec";
 let complaintForm = document.querySelector("form");
 let complaintType = document.querySelector("#complaintType");
 
 complaintForm.addEventListener("submit", (e) => {
-  let data = new FormData(complaintForm);
-
   if (complaintType.value !== "") {
-    e.target.btn.innerText === "Submitting....";
+    e.target.btn.innerText = "Complaint Submitting....";
+    let data = new FormData(complaintForm);
+
     fetch(url, {
       method: "POST",
       body: data,
@@ -47,7 +47,16 @@ complaintForm.addEventListener("submit", (e) => {
       })
       .then((finalRes) => {
         complaintForm.reset();
+        e.target.btn.innerText = "Complaint Submitted!!";
+
+        setTimeout(function () {
+          e.target.btn.innerText = "Submit Complaint";
+        }, 2000);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
       });
+
     e.preventDefault();
   } else {
     e.preventDefault();
