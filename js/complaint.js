@@ -1,12 +1,33 @@
 "use strict";
 /****************************************************************
- * Hamburger Logic Start
+ * Hamburger Variables Start
  ****************************************************************/
 
 let HamburgerIcon = document.querySelector(".fa-bars-staggered");
 let HamburgerCross = document.querySelector(".fa-xmark");
 let HamburgerContainer = document.querySelector(".hamburger-container");
 let HamburgerMenu = document.querySelectorAll(".hamburger-container ul a li");
+
+/****************************************************************
+ * Hamburger Variables End
+ ****************************************************************/
+
+/****************************************************************
+ *  DSP COMPLAINT - 2023 Variables Start
+ ****************************************************************/
+
+const complaintFormUrl =
+  "https://script.google.com/macros/s/AKfycbyWFZ11NC2hE-LyO-y4qDD9_rjqFug3fBurOS9mhCuynjwmaf0_h2gARpKQu5vEX3Li/exec";
+const dateInput = document.getElementById("date");
+const complaintForm = document.querySelector("form");
+
+/****************************************************************
+ *  DSP COMPLAINT - 2023 Variables End
+ ****************************************************************/
+
+/****************************************************************
+ * Hamburger Logic Start
+ ****************************************************************/
 
 HamburgerIcon.addEventListener("click", HamburgerOpening);
 HamburgerCross.addEventListener("click", HamburgerClosing);
@@ -24,14 +45,14 @@ function HamburgerClosing() {
 /****************************************************************
  * Hamburger Logic End
  ****************************************************************/
+
 /****************************************************************
- * DIGP SOUTH ZONE COMPLAINT - 2023 Logic Start
+ * DSP COMPLAINT - 2023 Logic Start
  ****************************************************************/
 
-const url =
-  "https://script.google.com/macros/s/AKfycbz0UdjOz_zbYOUc_EEbYsh6W8awtTjnxP-5r_b0Lu5tdLYbjv5iiEH7dP3ZF5m-Q7HV/exec";
-const dateInput = document.getElementById("time");
-const complaintForm = document.querySelector("form");
+/****************************************************************
+ * Date and Time Logic Start
+ ****************************************************************/
 
 setInterval(function () {
   const now = new Date();
@@ -76,56 +97,91 @@ setInterval(function () {
     "December",
   ];
 
-  dateInput.value = `${dd} ${monthNames[mm]}, ${yyyy}  ${hours} : ${mins} : ${secs}`;
+  dateInput.value = `${dd} ${monthNames[mm]}, ${yyyy}  ${hours}:${mins}:${secs}`;
 }, 1000);
 
+/****************************************************************
+ * Date and Time Logic End
+ ****************************************************************/
+
+/****************************************************************
+ * Data Sending to Google Sheet Logic Start
+ ****************************************************************/
+
 complaintForm.addEventListener("submit", (e) => {
-  if (complaintType.value !== "") {
-    e.target.btn.innerText = "Complaint Submitting....";
-    e.preventDefault();
+  const complaintFormData = new FormData(complaintForm);
+  const subject = complaintFormData.get("complaintType");
 
-    let data = new FormData(complaintForm);
+  if (subject !== "") {
+    e.target.btn.textContent = "Complaint Submitting....";
 
-    fetch(url, {
+    fetch(complaintFormUrl, {
       method: "POST",
-      body: data,
+      body: complaintFormData,
     })
-      .then((res) => res.text())
+      .then((res) => {
+        return res.text();
+      })
       .then((finalRes) => {
         complaintForm.reset();
-        e.target.btn.innerText = "Complaint Submitted!!";
+        e.target.btn.textContent = "Complaint Submitted Successfully!!!";
 
         setTimeout(function () {
-          e.target.btn.innerText = "Submit Complaint";
-        }, 2000);
+          e.target.btn.textContent = "Submit Complaint";
+        }, 3000);
+
+        /****************************************************************
+         * Data Sending to Whatsapp Logic Start
+         ****************************************************************/
 
         let whatsappMessage =
           "https://wa.me/923350020257?text=" +
           "*DSP COMPLAIN CELL, DIGP SOUTH ZONE KYC*" +
           "%0a" +
-          "*NAME* : " + "%0a" +
-          data.get("name") +
+          "*COMPLAINANT NAME* : " +
           "%0a" +
-          "*WHATSAPP* : " + "%0a" +
-          data.get("whatsapp") +
+          complaintFormData.get("name") +
           "%0a" +
-          "*SUBJECT* : " + "%0a" +
-          data.get("complaintType") +
+          "*WHATSAPP* : " +
           "%0a" +
-          "*COMPLAINT DETAILS* : " + "%0a" +
-          data.get("shortBrief") +
+          complaintFormData.get("whatsapp") +
           "%0a" +
-          "*COMPLAINT DATE* : " +"%0a" +
-          data.get("time");
+          "*CNIC NUBMER* : " +
+          "%0a" +
+          complaintFormData.get("cnic") +
+          "%0a" +
+          "*SUBJECT* : " +
+          "%0a" +
+          complaintFormData.get("complaintType") +
+          "%0a" +
+          "*COMPLAINT DETAILS* : " +
+          "%0a" +
+          complaintFormData.get("shortBrief") +
+          "%0a" +
+          "*COMPLAINT DATE* : " +
+          "%0a" +
+          complaintFormData.get("time");
 
         window.open(whatsappMessage, "_blank");
+
+        /****************************************************************
+         * Data Sending to Whatsapp Logic Start
+         ****************************************************************/
+      })
+      .catch((error) => {
+        console.log(error);
       });
+    e.preventDefault();
   } else {
     e.preventDefault();
-    alert("Please Select Complaint Type!!");
+    alert("Please Select a Complaint Subject !!");
   }
 });
 
 /****************************************************************
- * DIGP SOUTH ZONE COMPLAINT - 2023 Logic End
+ * Data Sending to Google Sheet Logic End
+ ****************************************************************/
+
+/****************************************************************
+ * DSP COMPLAINT - 2023 Logic End
  ****************************************************************/
