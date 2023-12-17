@@ -132,7 +132,7 @@ body a {
 }
 
 .hamburger-container ul a li:hover {
-  color: var(--light-blue);
+  color: var(--button-hover);
 }
 
 .button {
@@ -146,7 +146,6 @@ body a {
   border-radius: 5px;
   font-family: var(--main-font);
   transition: 0.6s;
-  border: none;
 }
 
 .button:hover {
@@ -177,19 +176,29 @@ body a {
 }
 
 /*************************************************************************************************
-Hero Section start 
+About us Section start 
 **************************************************************************************************/
-
-#complaint {
+#about-us {
   /* border: 1px solid #fff; */
-  min-height: 100dvh;
   width: 100%;
-  overflow: hidden;
-  background-image: radial-gradient(
-    farthest-corner circle at 8% 30%,
-    #6366f1 0%,
-    #2a489e 100%
-  );
+  min-height: 100dvh;
+}
+
+#about-us > h1 {
+  /* border: 1px solid #fff; */
+  text-align: center;
+  font-size: 3rem;
+  color: var(--white);
+  font-family: var(--main-font);
+}
+
+#about-us > h3 {
+  /* border: 1px solid #fff; */
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--white);
+  font-family: var(--sub-font);
+  font-weight: 500;
 }
 
 nav {
@@ -216,7 +225,6 @@ nav .left-div {
 nav .left-div .logo {
   /* border: 1px solid #f00; */
   width: 3.75rem;
-  cursor: pointer;
 }
 
 nav .left-div h1 {
@@ -250,70 +258,13 @@ nav .right-div .fa-bars-staggered:hover {
   color: var(--button-hover);
 }
 
-.main-div-of-txt-and-form {
+#about-us ul {
   /* border: 1px solid #fff; */
   width: 100%;
-  min-height: 80dvh;
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.txt-div {
-  /* border: 1px solid #f00; */
-  width: 40%;
-  height: 100%;
-  padding-left: 30px;
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.txt-div h1 {
-  /* border: 1px solid #fff; */
-  width: 23.687rem;
-  font-size: 4rem;
-  color: var(--white);
-  font-family: var(--main-font);
-}
-
-.txt-div h3 {
-  /* border: 1px solid #fff; */
-  font-size: 2rem;
-  width: 20rem;
-  color: var(--white);
-  font-family: var(--main-font);
-}
-
-.txt-div p {
-  /* border: 1px solid #fff; */
-  font-size: 1.2rem;
-  width: 25rem;
-  color: var(--white);
-  line-height: 1.5rem;
-  padding-top: 10px;
-  font-family: var(--sub-font);
-}
-
-.form-div {
-  /* border: 1px solid #f00; */
-  width: 60%;
-  height: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.form-div form {
-  /* border: 1px solid #fff; */
-  width: 100%;
-  height: 100%;
+  min-height: 200dvh;
   position: relative;
+  padding: 30px 0px;
+  list-style: none;
 
   display: flex;
   align-items: center;
@@ -321,112 +272,101 @@ nav .right-div .fa-bars-staggered:hover {
   flex-direction: column;
 }
 
-.form-div form .form-button-div {
-  /* border: 1px solid #fff; */
-  width: 90%;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-top: 10px;
-}
-
-.form-div form .form-button-div button {
-  border: 1px solid var(--button-hover);
-  outline: none;
-  background-color: transparent;
-  margin: 0;
-  font-family: var(--sub-font);
-  font-size: 1rem;
-  cursor: pointer;
-  overflow: hidden;
-  z-index: 2;
-  border-radius: 10px;
-
-  position: relative;
-}
-
-.form-div form .form-button-div button::after {
+#about-us ul::before {
   content: "";
-  width: 150%;
-  height: 160%;
+  background-color: var(--gray);
+  width: 2px;
+  height: 90%;
   position: absolute;
-  bottom: -100px;
-  background-color: var(--button-hover);
-  transition: 0.5s;
+  top: auto;
+  left: 50%;
   z-index: -1;
 }
 
-.form-div form .form-button-div button:hover:after {
-  bottom: -10%;
-}
-
-.form-div .field-div {
-  /* border: 1px solid #fff; */
-  width: 90%;
-  height: 3rem;
-  margin-bottom: 1rem;
+#about-us ul li {
+  /* border: 1px solid #f00; */
+  width: 100%;
+  height: 270px;
 
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+#about-us ul li .about-txt-left-div {
+  /* border: 1px solid #fff; */
+  width: 40vw;
+  height: 100%;
+  padding: 0px 40px;
+  color: var(--white);
+  text-align: right;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   flex-direction: column;
 }
 
-.form-div .field-div span {
-  font-size: 0.8rem;
-  color: var(--white);
-  font-family: var(--sub-font);
-  margin-bottom: 5px;
+#about-us ul li .about-txt-left-div h1 {
+  font-family: var(--main-font);
 }
 
-.form-div .field-div input,
-.form-div .field-div select {
-  background-color: var(--white);
-  font-size: 0.8rem;
-  color: var(--gray);
-  font-family: var(--sub-font);
-  width: 100%;
-  height: 2rem;
-  padding-left: 30px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
+#about-us ul li .about-txt-left-div h3 {
+  font-family: var(--main-font);
 }
 
-.form-div .txt-area {
+#about-us ul li .about-txt-left-div p {
+  font-family: var(--sub-font);
+  font-weight: 200;
+}
+
+#about-us ul li .about-img-div {
   /* border: 1px solid #fff; */
-  width: 90%;
-  height: 10rem;
+  width: 20vw;
+  height: 100%;
+  border: 7px solid var(--gray);
+  border-radius: 100%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-us ul li .about-img-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#about-us ul li .about-txt-right-div {
+  /* border: 1px solid #fff; */
+  width: 40vw;
+  height: 100%;
+  padding: 0px 40px;
+  color: var(--white);
+  text-align: left;
 
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
 }
 
-.form-div .txt-area span {
-  /* border: 1px solid #000; */
-  font-size: 0.8rem;
-  color: var(--white);
-  font-family: var(--sub-font);
-  margin-bottom: 5px;
+#about-us ul li .about-txt-right-div h1 {
+  font-family: var(--main-font);
 }
 
-.form-div .txt-area textarea {
-  background-color: var(--white);
-  font-size: 0.8rem;
-  color: var(--gray);
+#about-us ul li .about-txt-right-div h3 {
+  font-family: var(--main-font);
+}
+
+#about-us ul li .about-txt-right-div p {
   font-family: var(--sub-font);
-  width: 100%;
-  height: 90%;
-  padding: 10px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  resize: none;
+  font-weight: 200;
 }
 
 /*************************************************************************************************
-Hero Section end
+About us Section end
 **************************************************************************************************/

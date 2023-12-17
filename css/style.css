@@ -711,7 +711,7 @@ wcpc complaint Section start
   font-size: 1rem;
   width: 30rem;
   color: var(--white);
-  font-family: var(--main-font);
+  font-family: var(--sub-font);
 }
 
 #wcpc-complaint .wcpc-txt-main-div h1 {
