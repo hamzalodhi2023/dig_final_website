@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SPEAKUP</title>
+    <title>STATISTICS</title>
     <!--------------------------------------------------------------------------------------------------
      Animation.css  start
     ---------------------------------------------------------------------------------------------------->
@@ -66,7 +66,7 @@
      favicon end
     ---------------------------------------------------------------------------------------------------->
 
-    <link rel="stylesheet" href="css/complaint.css" />
+    <link rel="stylesheet" href="css/statistics.css" />
   </head>
   <body>
     <!--------------------------------------------------------------------------------------------------
@@ -87,129 +87,28 @@
     <!--------------------------------------------------------------------------------------------------
      Hamburger section end
     ---------------------------------------------------------------------------------------------------->
-    <!--------------------------------------------------------------------------------------------------
-     Hero section start
-    ---------------------------------------------------------------------------------------------------->
-    <section id="complaint">
-      <nav>
-        <div class="left-div">
-          <a href="index.html">
-            <img
-              src="images/logo.png"
-              alt="LOGO"
-              class="logo animate__animated wow animate__fadeInDown"
-            />
-          </a>
-          <h1 class="animate__animated wow animate__fadeInDown">
-            DIGP SOUTH ZONE KARACHI
-          </h1>
-        </div>
-        <div class="right-div">
-          <i
-            class="fa-solid fa-bars-staggered animate__animated wow animate__fadeInRight"
-          ></i>
-        </div>
-      </nav>
-      <div class="main-div-of-txt-and-form">
-        <div
-          class="txt-div animate__animated wow animate__fadeInLeft animate__slow"
-        >
-          <h1>SpeakUp!</h1>
-          <h3>In Case of</h3>
-          <ul>
-            <li>Faulty Investigation</li>
-            <li>Registration of False FIR</li>
-            <li>Arrest of Innocent Citizen</li>
-            <li>Demanding Bribe</li>
-          </ul>
-        </div>
-        <div
-          class="form-div animate__animated wow animate__fadeInRight animate__slow"
-        >
-          <form>
-            <div style="display: none" class="field-div">
-              <span>DATE AND TIME:</span>
-              <input
-                type="text"
-                name="time"
-                id="date"
-                autocomplete="off"
-                readonly
-              />
-            </div>
-            <div class="field-div">
-              <span>COMPLAINANT NAME:</span>
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                autocomplete="off"
-                required
-              />
-            </div>
-            <div class="field-div">
-              <span>CNIC Number:</span>
-              <input
-                type="tel"
-                name="cnic"
-                placeholder="CNIC Number"
-                autocomplete="off"
-                maxlength="13"
-                required
-              />
-            </div>
-            <div class="field-div">
-              <span>WHATSAPP NUMBER:</span>
-              <input
-                type="tel"
-                autocomplete="off"
-                name="whatsapp"
-                placeholder="Whatsapp Number"
-                maxlength="11"
-                required
-              />
-            </div>
-            <div class="field-div">
-              <span>SUBJECT:</span>
-              <select name="complaintType">
-                <option value="" selected>--Select Crime Type--</option>
-                <option value="Faulty Investigation">
-                  Faulty Investigation
-                </option>
-                <option value="Registration of False FIR">
-                  Registration of False FIR
-                </option>
-                <option value="Arrest of Innocent Citizen">
-                  Arrest of Innocent Citizen
-                </option>
-                <option value="Demand of Bribe">Demand of Bribe</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div class="txt-area">
-              <span>COMPLAINT DETAILS:</span>
-              <textarea
-                name="shortBrief"
-                cols="30"
-                rows="10"
-                autocomplete="off"
-                placeholder="Your Complaint Detail Here"
-                maxlength="1000"
-                required
-              ></textarea>
-            </div>
-            <div class="form-button-div">
-              <button class="button" id="btn">Submit Complaint</button>
-            </div>
-          </form>
-        </div>
+    <nav>
+      <div class="left-div">
+        <a href="index.html">
+          <img
+            src="images/logo.png"
+            alt="LOGO"
+            class="logo animate__animated wow animate__fadeInDown animate__slow"
+          />
+        </a>
+        <h1 class="animate__animated wow animate__fadeInDown animate__slow">
+          DIGP SOUTH ZONE KARACHI
+        </h1>
       </div>
-    </section>
-    <!--------------------------------------------------------------------------------------------------
-     Hero section start
-    ---------------------------------------------------------------------------------------------------->
+      <div class="right-div">
+        <i
+          class="fa-solid fa-bars-staggered animate__animated wow animate__fadeInRight animate__slow"
+        ></i>
+      </div>
+    </nav>
+    <h1 class="sta">CRIME STATISTICS</h1>
   </body>
-  <script src="js/complaint.js"></script>
+  <script src="js/statistics.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
     integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
