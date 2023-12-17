@@ -1,11 +1,59 @@
 "use strict";
+
 /****************************************************************
- * Slider Logic Start
+ * Slider Variables Start
  ****************************************************************/
 
 const imgs = document.querySelectorAll("#hero .slider-img");
 const sliderImg = document.querySelector("#hero img.animation");
 let currentImgIndex = 0;
+
+/****************************************************************
+ * Slider Variables End
+ ****************************************************************/
+
+/****************************************************************
+ *  Hamburger Variables Start
+ ****************************************************************/
+
+let HamburgerIcon = document.querySelector(".fa-bars-staggered");
+let HamburgerCross = document.querySelector(".fa-xmark");
+let HamburgerContainer = document.querySelector(".hamburger-container");
+let HamburgerMenu = document.querySelectorAll(".hamburger-container ul a li");
+
+/****************************************************************
+ * Hamburger Variables End
+ ****************************************************************/
+
+/****************************************************************
+ *  Latest Events Popup Variables Start
+ ****************************************************************/
+
+let popup = document.querySelector("#event-popup");
+let latestEventCard = document.querySelectorAll(".event");
+let popupClosingIcon = document.querySelector(".popup-closing-icon");
+let popupImg = popup.querySelector("img");
+let popupTitle = popup.querySelector("h3");
+let popupAbout = popup.querySelector("p");
+
+/****************************************************************
+ * Latest Events Popup Variables End
+ ****************************************************************/
+/****************************************************************
+ *  Subscription Form Data Sending in Google Sheets Variables Start
+ ****************************************************************/
+
+const subscriptionForm = document.querySelector("form");
+const subscriptionFormURL =
+  "https://script.google.com/macros/s/AKfycbzPd85EbILMkz92KshwixEUhSyspMYggXZmUu7gvO-RFY5Jre6Y48HXx1ac8rqExHWIIQ/exec";
+
+/****************************************************************
+ * Subscription Form Data Sending in Google Sheets Popup Variables End
+ ****************************************************************/
+
+/****************************************************************
+ * Slider Logic Start
+ ****************************************************************/
 
 function showImage() {
   sliderImg.classList.remove("animation");
@@ -25,11 +73,6 @@ setInterval(showImage, 9000);
 /****************************************************************
  * Hamburger Logic Start
  ****************************************************************/
-
-let HamburgerIcon = document.querySelector(".fa-bars-staggered");
-let HamburgerCross = document.querySelector(".fa-xmark");
-let HamburgerContainer = document.querySelector(".hamburger-container");
-let HamburgerMenu = document.querySelectorAll(".hamburger-container ul a li");
 
 HamburgerIcon.addEventListener("click", HamburgerOpening);
 HamburgerCross.addEventListener("click", HamburgerClosing);
@@ -51,13 +94,6 @@ function HamburgerClosing() {
  * Latest Events Popup Logic Start
  ****************************************************************/
 
-let popup = document.querySelector("#event-popup");
-let latestEventCard = document.querySelectorAll(".event");
-let popupClosingIcon = document.querySelector(".popup-closing-icon");
-let popupImg = popup.querySelector("img");
-let popupTitle = popup.querySelector("h3");
-let popupAbout = popup.querySelector("p");
-
 popupClosingIcon.addEventListener("click", () => {
   popup.style.top = "100%";
 });
@@ -78,4 +114,55 @@ latestEventCard.forEach((element) => {
 
 /****************************************************************
  * Latest Events Popup Logic End
+ ****************************************************************/
+
+/****************************************************************
+ * Subscription Form Data Sending in Google Sheets Logic Start
+ ****************************************************************/
+
+subscriptionForm.addEventListener("submit", (e) => {
+  e.target.btn.innerHTML = "Submitting...";
+  let subscriptionFormData = new FormData(subscriptionForm);
+  e.preventDefault();
+
+  fetch(subscriptionFormURL, {
+    method: "POST",
+    body: subscriptionFormData,
+  })
+    .then((res) => {
+      return res.text();
+    })
+    .then((finalRes) => {
+      /****************************************************************
+       * Subscriber Email Sending Logic Start
+       ****************************************************************/
+
+      const emailBody =
+        "<h1 style='font-size: 20px; text-align: center' >THANKS TO SUBSCRIBE US</h1><p style='font-size: 13px; text-align: justify; text-align-last: center'>Stay informed and connected with the latest updates from the DIGP South Zone Karachi by subscribing to our monthly newsletter! By joining our subscription list, you'll receive exclusive insights into our community initiatives, crime prevention tips, and updates on law enforcement activities in the region. Be the first to know about events, public safety announcements, and the outstanding work our officers are doing to keep our communities safe. Your subscription ensures you never miss a beat when it comes to staying involved with the DIGP South Zone Karachi. Sign up today to receive a monthly dose of important information delivered straight to your inbox. Together, let's build a safer and more secure future for our community</p><p style='text-align: center; margin: 0; padding: 0'><b>Address: </b> DIGP South Zone Office, Awan-e-Sadder Road, Karachi, Pakistan</p><p style='text-align: center; margin: 0; padding: 0'><b>Email: </b> info@digpsouthzonekarachi.com</p><p style='text-align: center; margin: 0; padding: 0'><b>Website: </b>www.digpsouthzonekarachi.com</p><p style='text-align: center; margin: 0; padding: 0'>Copyright © 2023 DIGP South Zone Karachi, All rights reserved.</p>";
+
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "hafsalodhi2023@gmail.com",
+        Password: "CBDA46B74169BB40DA5B3E4FDF0527EEDC5B",
+        To: subscriptionFormData.get("email"),
+        From: "hafsalodhi2023@gmail.com",
+        Subject: "THANKS FOR SUBSCRIPTION!",
+        Body: emailBody,
+      });
+
+      /****************************************************************
+       * Subscriber Email Sending Logic Start
+       ****************************************************************/
+
+      subscriptionForm.reset();
+      e.target.btn.innerHTML = "Subscribed!";
+
+      setTimeout(function () {
+        e.target.btn.innerHTML = "Subscribe";
+      }, 3000);
+    });
+});
+
+/****************************************************************
+ * Subscription Form Data Sending in Google Sheets Logic End
  ****************************************************************/

@@ -104,10 +104,6 @@ setInterval(function () {
  * Date and Time Logic End
  ****************************************************************/
 
-/****************************************************************
- * Data Sending to Google Sheet Logic Start
- ****************************************************************/
-
 complaintForm.addEventListener("submit", (e) => {
   const complaintFormData = new FormData(complaintForm);
   const subject = complaintFormData.get("complaintType");
@@ -177,10 +173,6 @@ complaintForm.addEventListener("submit", (e) => {
     alert("Please Select a Complaint Subject !!");
   }
 });
-
-/****************************************************************
- * Data Sending to Google Sheet Logic End
- ****************************************************************/
 
 /****************************************************************
  * DSP COMPLAINT - 2023 Logic End
