@@ -124,29 +124,52 @@
         <div
           class="form-div animate__animated wow animate__fadeInRight animate__slow"
         >
-          <form action="">
-            <div class="field-div">
+          <form>
+            <div style="display: none" class="field-div">
               <span>DATE AND TIME:</span>
-              <input type="number" name="" id="" readonly />
+              <input
+                type="text"
+                name="time"
+                id="date"
+                autocomplete="off"
+                readonly
+              />
             </div>
             <div class="field-div">
-              <span>NAME:</span>
-              <input type="text" name="" id="" placeholder="Name" required />
+              <span>COMPLAINANT NAME:</span>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="field-div">
+              <span>CNIC Number:</span>
+              <input
+                type="tel"
+                name="cnic"
+                placeholder="CNIC Number"
+                autocomplete="off"
+                maxlength="13"
+                required
+              />
             </div>
             <div class="field-div">
               <span>WHATSAPP NUMBER:</span>
               <input
                 type="tel"
-                name=""
-                id=""
+                autocomplete="off"
+                name="whatsapp"
                 placeholder="Whatsapp Number"
                 maxlength="11"
                 required
               />
             </div>
             <div class="field-div">
-              <span>COMPLAINT TYPE:</span>
-              <select name="" id="">
+              <span>SUBJECT:</span>
+              <select name="complaintType">
                 <option value="" selected>--Select Crime Type--</option>
                 <option value="Faulty Investigation">Domestic Violence</option>
                 <option value="Registration of False FIR">
@@ -165,19 +188,19 @@
               </select>
             </div>
             <div class="txt-area">
-              <span>SHORT BRIEF OF COMPLAINT:</span>
+              <span>COMPLAINT DETAILS:</span>
               <textarea
-                name=""
-                id=""
+                name="shortBrief"
                 cols="30"
                 rows="10"
+                autocomplete="off"
                 placeholder="Your Complaint Detail Here"
                 maxlength="1000"
                 required
               ></textarea>
             </div>
             <div class="form-button-div">
-              <button class="button">Submit Complaint</button>
+              <button class="button" id="btn">Submit Complaint</button>
             </div>
           </form>
         </div>

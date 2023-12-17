@@ -127,24 +127,34 @@
           class="form-div animate__animated wow animate__fadeInRight animate__slow"
         >
           <form>
-            <div class="field-div">
+            <div style="display: none" class="field-div">
               <span>DATE AND TIME:</span>
               <input
                 type="text"
                 name="time"
-                id="time"
+                id="date"
                 autocomplete="off"
                 readonly
               />
             </div>
             <div class="field-div">
-              <span>NAME:</span>
+              <span>COMPLAINANT NAME:</span>
               <input
                 type="text"
                 name="name"
-                id="name"
                 placeholder="Name"
                 autocomplete="off"
+                required
+              />
+            </div>
+            <div class="field-div">
+              <span>CNIC Number:</span>
+              <input
+                type="tel"
+                name="cnic"
+                placeholder="CNIC Number"
+                autocomplete="off"
+                maxlength="13"
                 required
               />
             </div>
@@ -154,7 +164,6 @@
                 type="tel"
                 autocomplete="off"
                 name="whatsapp"
-                id="whatsapp"
                 placeholder="Whatsapp Number"
                 maxlength="11"
                 required
@@ -162,7 +171,7 @@
             </div>
             <div class="field-div">
               <span>SUBJECT:</span>
-              <select name="complaintType" id="complaintType">
+              <select name="complaintType">
                 <option value="" selected>--Select Crime Type--</option>
                 <option value="Faulty Investigation">
                   Faulty Investigation
@@ -181,7 +190,6 @@
               <span>COMPLAINT DETAILS:</span>
               <textarea
                 name="shortBrief"
-                id="shortBrief"
                 cols="30"
                 rows="10"
                 autocomplete="off"
