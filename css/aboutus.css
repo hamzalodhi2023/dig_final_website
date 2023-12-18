@@ -319,6 +319,10 @@ nav .right-div .fa-bars-staggered:hover {
 #about-us ul li .about-txt-left-div p {
   font-family: var(--sub-font);
   font-weight: 200;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  text-align: justify;
+  text-align-last: right;
 }
 
 #about-us ul li .about-img-div {
@@ -365,6 +369,10 @@ nav .right-div .fa-bars-staggered:hover {
 #about-us ul li .about-txt-right-div p {
   font-family: var(--sub-font);
   font-weight: 200;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  text-align: justify;
+  text-align-last: left;
 }
 
 /*************************************************************************************************
