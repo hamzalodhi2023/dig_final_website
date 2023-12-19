@@ -813,7 +813,7 @@ Subscribe Section start
   width: 150%;
   height: 160%;
   position: absolute;
-  bottom: -100px;
+  bottom: -140px;
   background-color: var(--button-hover);
   transition: 0.5s;
   z-index: -1;
@@ -850,7 +850,7 @@ Police Welfare complaint Section start
   top: 0;
   right: 0;
   content: "";
-  width: 40rem;
+  width: 35rem;
   height: 100%;
   background-image: url(../images/Welfare.webp);
   background-position: right;
@@ -968,11 +968,35 @@ Footer Section end
 /*************************************************************************************************
 Media start
 **************************************************************************************************/
-@media only screen and (max-width: 1920px) and (min-width: 1440px) {
+/* @media only screen and (max-width: 1920px) and (min-width: 1440px) {
+  html {
+    font-size: 20px;
+  }
+} */
+@media only screen and (max-width: 1440px) and (min-width: 1367px) {
   html {
     font-size: 20px;
   }
 }
+
+@media only screen and (max-width: 1600px) and (min-width: 1441px) {
+  html {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (max-width: 1680px) and (min-width: 1601px) {
+  html {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1681px) {
+  html {
+    font-size: 25px;
+  }
+}
+
 /*************************************************************************************************
 Media end
 **************************************************************************************************/
