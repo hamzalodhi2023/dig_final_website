@@ -174,7 +174,9 @@ body a {
   transform: scale(1.2);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
-
+#hero-small {
+  display: none;
+}
 /*************************************************************************************************
 Hero Section start 
 **************************************************************************************************/
@@ -966,7 +968,7 @@ Footer Section start
 Footer Section end
 **************************************************************************************************/
 /*************************************************************************************************
-Media start
+Media for Desktop devices start 
 **************************************************************************************************/
 
 @media only screen and (max-width: 1440px) and (min-width: 1367px) {
@@ -993,6 +995,75 @@ Media start
   }
 }
 
+@media only screen and (max-width: 1365px) and (min-width: 1024px) {
+  html {
+    font-size: 13px;
+  }
+}
 /*************************************************************************************************
-Media end
+Media for Desktop devices  end
+**************************************************************************************************/
+
+/*************************************************************************************************
+Media for Tablet Small start
+**************************************************************************************************/
+/* @media only screen and (max-width: 768px) and (min-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+
+  #hero {
+    display: none;
+  }
+
+  #hero-small {
+    border: 1px solid #f00;
+    width: 100%;
+    max-height: 200dvh;
+    min-height: 50dvh;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #hero-small img {
+    width: 20rem;
+    margin: 2rem;
+  }
+
+  #hero-small h1 {
+    font-size: 3.5rem;
+    font-family: var(--main-font);
+    color: var(--white);
+  }
+
+  #hero-small h2 {
+    font-size: 2.5rem;
+    font-family: var(--main-font);
+    color: var(--white);
+  }
+
+  #hero-small h3 {
+    font-size: 3rem;
+    font-family: var(--main-font);
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+
+  #hero-small .fa-bars-staggered {
+    border: 1px solid #fff;
+    color: var(--white);
+    font-size: 5rem;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+} */
+/*************************************************************************************************
+Media for Tablet Small end
 **************************************************************************************************/
