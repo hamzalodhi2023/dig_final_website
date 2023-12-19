@@ -968,11 +968,7 @@ Footer Section end
 /*************************************************************************************************
 Media start
 **************************************************************************************************/
-/* @media only screen and (max-width: 1920px) and (min-width: 1440px) {
-  html {
-    font-size: 20px;
-  }
-} */
+
 @media only screen and (max-width: 1440px) and (min-width: 1367px) {
   html {
     font-size: 20px;
