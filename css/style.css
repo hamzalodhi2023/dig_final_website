@@ -867,7 +867,7 @@ Police Welfare complaint Section start
 
 #police-welfare .police-welfare-txt-main-div ul {
   /* border: 1px solid #fff; */
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--white);
   font-family: var(--sub-font);
   margin-left: 30px;
@@ -875,7 +875,7 @@ Police Welfare complaint Section start
 
 #police-welfare .police-welfare-txt-main-div h1 {
   /* border: 1px solid #fff; */
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--white);
   font-family: var(--main-font);
 }
@@ -970,7 +970,7 @@ Media start
 **************************************************************************************************/
 @media only screen and (max-width: 1920px) and (min-width: 1440px) {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 /*************************************************************************************************
