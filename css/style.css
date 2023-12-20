@@ -1310,16 +1310,16 @@ Media for Tablet Small end
 
   #services h1 {
     /* border: 1px solid #fff; */
-    font-size: 5.125rem;
+    font-size: 7.125rem;
   }
 
   #services .service-div .service {
     /* border: 1px solid #fff; */
     background-color: var(--light-blue);
-    width: 50rem;
-    height: 30.625rem;
+    width: 55rem;
+    height: 35.625rem;
     border-radius: 20px;
-    margin-bottom: 1.38rem;
+    margin-bottom: 2.38rem;
     margin-left: 10px;
     margin-right: 10px;
     padding: 0px 40px;
@@ -1331,7 +1331,7 @@ Media for Tablet Small end
   }
 
   #services .service-div .service h3 {
-    font-size: 4rem;
+    font-size: 7rem;
     font-weight: 500;
     font-family: var(--sub-font);
     color: var(--white);
@@ -1339,7 +1339,7 @@ Media for Tablet Small end
   }
 
   #services .service-div .service p {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 300;
     font-family: var(--sub-font);
     text-align: center;
