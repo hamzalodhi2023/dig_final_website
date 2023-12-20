@@ -1435,6 +1435,34 @@ Media for Tablet Small end
     min-height: auto;
   }
 
+  #wcpc-complaint .wcpc-txt-main-div p {
+    /* border: 1px solid #fff; */
+    font-size: 2rem;
+    width: 30rem;
+    color: var(--white);
+    font-family: var(--sub-font);
+  }
+
+  #wcpc-complaint .wcpc-txt-main-div h1 {
+    /* border: 1px solid #fff; */
+    font-size: 5rem;
+    color: var(--white);
+    font-family: var(--main-font);
+  }
+
+  #wcpc-complaint .wcpc-txt-main-div h3 {
+    /* border: 1px solid #fff; */
+    font-size: 3rem;
+    color: var(--white);
+    font-family: var(--main-font);
+  }
+
+  #wcpc-complaint .wcpc-txt-main-div a {
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 2rem;
+  }
+
   #police-welfare {
     /* border: 1px solid #f00; */
     min-height: 50dvh;
