@@ -345,7 +345,7 @@ Message Section start
 #message .txt-div {
   /* border: 1px solid #fff; */
   width: 50%;
-  height: 100dvh;
+  height: 100%;
   padding-left: 30px;
 
   display: flex;
@@ -380,7 +380,7 @@ Message Section start
 #message .img-div {
   /* border: 1px solid #fff; */
   width: 50%;
-  height: 100dvh;
+  height: 100%;
 
   display: flex;
   align-items: center;
@@ -459,6 +459,7 @@ Services Section start
   font-weight: 500;
   font-family: var(--sub-font);
   color: var(--white);
+  text-align: center;
 }
 
 #services .service-div .service p {
@@ -762,7 +763,7 @@ Subscribe Section start
 }
 
 #subscribe .subscribe-main-div {
-  width: 70rem;
+  width: 90%;
   height: 8rem;
   border-radius: 1.875rem;
   background-image: linear-gradient(20deg, #6366f1 9% 9%, #2a489e 91% 50%);
@@ -773,7 +774,7 @@ Subscribe Section start
 }
 
 #subscribe .subscribe-main-div form {
-  /* border: 1px solid #000; */
+  /* border: 1px solid #f00; */
   width: 100%;
   height: 100%;
   padding: 60px;
@@ -838,33 +839,29 @@ Police Welfare complaint Section start
   width: 100%;
   min-height: 100dvh;
   overflow: hidden;
-  position: relative;
-  padding-right: 30px;
 
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-#police-welfare::after {
-  /* border: 1px solid #fff; */
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: "";
-  width: 35rem;
+.police-welfare-image-div {
+  /* border: 1px solid #f00; */
+  width: 50%;
   height: 100%;
-  background-image: url(../images/Welfare.webp);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
+}
+
+.police-welfare-image-div img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 #police-welfare .police-welfare-txt-main-div {
   /* border: 1px solid #f00; */
-  position: absolute;
-  top: auto;
-  left: 30px;
+  width: 50%;
+  height: 100%;
+  padding-left: 2%;
 }
 
 #police-welfare .police-welfare-txt-main-div ul {
@@ -1007,7 +1004,7 @@ Media for Desktop devices  end
 /*************************************************************************************************
 Media for Tablet Small start
 **************************************************************************************************/
-/* @media only screen and (max-width: 768px) and (min-width: 600px) {
+@media only screen and (max-width: 768px) and (min-width: 600px) {
   html {
     font-size: 10px;
   }
@@ -1017,10 +1014,10 @@ Media for Tablet Small start
   }
 
   #hero-small {
-    border: 1px solid #f00;
+    /* border: 1px solid #f00; */
     width: 100%;
     max-height: 200dvh;
-    min-height: 50dvh;
+    min-height: 60dvh;
     position: relative;
 
     display: flex;
@@ -1054,7 +1051,7 @@ Media for Tablet Small start
   }
 
   #hero-small .fa-bars-staggered {
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     color: var(--white);
     font-size: 5rem;
     cursor: pointer;
@@ -1063,7 +1060,125 @@ Media for Tablet Small start
     top: 20px;
     right: 20px;
   }
-} */
+
+  #message {
+    /* border: 1px solid #fff; */
+    min-height: auto;
+    padding: 50px 0px;
+
+    flex-direction: column;
+  }
+
+  #message .txt-div {
+    /* border: 1px solid #fff; */
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #message .txt-div h1 {
+    font-size: 4rem;
+    font-family: var(--main-font);
+    color: var(--white);
+  }
+
+  #message .txt-div h2 {
+    font-size: 2.25rem;
+    font-family: var(--sub-font);
+    color: var(--white);
+  }
+
+  #message .txt-div p {
+    /* border: 1px solid #fff; */
+    font-size: 2.125rem;
+    font-family: var(--sub-font);
+    font-weight: 100;
+    color: var(--white);
+    padding-top: 20px;
+    width: 60.875rem;
+    text-align: justify;
+  }
+
+  #message .img-div {
+    /* border: 1px solid #fff; */
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #services {
+    /* border: 1px solid #f00; */
+    min-height: auto;
+  }
+
+  #services .service-div .service img {
+    /* border: 1px solid #fff; */
+    width: 8rem;
+  }
+
+  #speakup {
+    /* border: 1px solid #fff; */
+    width: 100%;
+    min-height: auto;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #latest-event {
+    /* border: 1px solid #fff; */
+    min-height: auto;
+  }
+
+  #wcpc-complaint {
+    /* border: 1px solid #fff; */
+    min-height: auto;
+  }
+
+  #police-welfare {
+    /* border: 1px solid #f00; */
+    min-height: 50dvh;
+  }
+
+  #subscribe {
+    /* border: 1px solid #000; */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  #subscribe .subscribe-main-div input {
+    /* border: 1px solid #000; */
+    margin-right: 20px;
+  }
+
+  #footer {
+    /* border: 1px solid #fff; */
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 30px;
+  }
+}
 /*************************************************************************************************
 Media for Tablet Small end
 **************************************************************************************************/
