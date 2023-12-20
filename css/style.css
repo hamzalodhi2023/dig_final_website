@@ -1206,25 +1206,33 @@ Media for Tablet Small end
   }
 
   #hero-small h1 {
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     font-family: var(--main-font);
     color: var(--white);
     text-align: center;
   }
 
   #hero-small h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-family: var(--main-font);
     color: var(--white);
     text-align: center;
   }
 
   #hero-small h3 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: var(--main-font);
     color: var(--white);
     margin-bottom: 1rem;
     text-align: center;
+  }
+
+  .social {
+    /* border: 1px solid #000; */
+    font-size: 3.1875rem;
+    width: 6.125rem;
+    height: 6.125rem;
+    margin: 0.56rem;
   }
 
   #hero-small .fa-bars-staggered {
@@ -1262,20 +1270,20 @@ Media for Tablet Small end
   }
 
   #message .txt-div h1 {
-    font-size: 4rem;
+    font-size: 5.5rem;
     font-family: var(--main-font);
     color: var(--white);
   }
 
   #message .txt-div h2 {
-    font-size: 2.25rem;
+    font-size: 4.25rem;
     font-family: var(--sub-font);
     color: var(--white);
   }
 
   #message .txt-div p {
     /* border: 1px solid #fff; */
-    font-size: 2.125rem;
+    font-size: 3.125rem;
     font-family: var(--sub-font);
     font-weight: 100;
     color: var(--white);
