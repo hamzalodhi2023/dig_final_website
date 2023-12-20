@@ -16,10 +16,13 @@ let currentImgIndex = 0;
  *  Hamburger Variables Start
  ****************************************************************/
 
-let HamburgerIcon = document.querySelector(".fa-bars-staggered");
-let HamburgerCross = document.querySelector(".fa-xmark");
+let HamburgerIcon = document.querySelector("nav .fa-bars-staggered");
+let HamburgerCross = document.querySelector(".hamburger-container .fa-xmark");
 let HamburgerContainer = document.querySelector(".hamburger-container");
 let HamburgerMenu = document.querySelectorAll(".hamburger-container ul a li");
+let smallHeroHamburgerIcon = document.querySelector(
+  "#hero-small .fa-bars-staggered"
+);
 
 /****************************************************************
  * Hamburger Variables End
@@ -76,6 +79,7 @@ setInterval(showImage, 9000);
 
 HamburgerIcon.addEventListener("click", HamburgerOpening);
 HamburgerCross.addEventListener("click", HamburgerClosing);
+smallHeroHamburgerIcon.addEventListener("click", HamburgerOpening);
 HamburgerMenu.forEach((element) => {
   element.addEventListener("click", HamburgerClosing);
 });
@@ -138,14 +142,14 @@ subscriptionForm.addEventListener("submit", (e) => {
        ****************************************************************/
 
       const emailBody =
-        "<h1 style='font-size: 20px; text-align: center' >THANKS TO SUBSCRIBE US</h1><p style='font-size: 13px; text-align: justify; text-align-last: center'>Stay informed and connected with the latest updates from the DIGP South Zone Karachi by subscribing to our monthly newsletter! By joining our subscription list, you'll receive exclusive insights into our community initiatives, crime prevention tips, and updates on law enforcement activities in the region. Be the first to know about events, public safety announcements, and the outstanding work our officers are doing to keep our communities safe. Your subscription ensures you never miss a beat when it comes to staying involved with the DIGP South Zone Karachi. Sign up today to receive a monthly dose of important information delivered straight to your inbox. Together, let's build a safer and more secure future for our community</p><p style='text-align: center; margin: 0; padding: 0'><b>Address: </b> DIGP South Zone Office, Awan-e-Sadder Road, Karachi, Pakistan</p><p style='text-align: center; margin: 0; padding: 0'><b>Email: </b> info@digpsouthzonekarachi.com</p><p style='text-align: center; margin: 0; padding: 0'><b>Website: </b>www.digpsouthzonekarachi.com</p><p style='text-align: center; margin: 0; padding: 0'>Copyright © 2023 DIGP South Zone Karachi, All rights reserved.</p>";
+        "<h1 style='font-size: 20px; text-align: center' >THANKS TO SUBSCRIBE US</h1><p style='font-size: 13px; text-align: justify; text-align-last: center'>Stay informed and connected with the latest updates from the DIGP South Zone Karachi by subscribing to our monthly newsletter! By joining our subscription list, you'll receive exclusive insights into our community initiatives, crime prevention tips, and updates on law enforcement activities in the region. Be the first to know about events, public safety announcements, and the outstanding work our officers are doing to keep our communities safe. Your subscription ensures you never miss a beat when it comes to staying involved with the DIGP South Zone Karachi. Sign up today to receive a monthly dose of important information delivered straight to your inbox. Together, let's build a safer and more secure future for our community</p><p style='text-align: center; margin: 0; padding: 0'><b>Address: </b> DIGP South Zone Office, Awan-e-Sadder Road, Karachi, Pakistan</p><p style='text-align: center; margin: 0; padding: 0'><b>Email: </b> <a href='mailto:info@digpsouthzonekarachi.com'> info@digpsouthzonekarachi.com </a></p><p style='text-align: center; margin: 0; padding: 0'><b>Website: </b> <a href='www.digpsouthzonekarachi.com'> www.digpsouthzonekarachi.com </a> </p><p style='text-align: center; margin: 0; padding: 0'>Copyright © 2023 DIGP South Zone Karachi, All rights reserved.</p>";
 
       Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "info@digpsouthzonekarachi.com",
+        Username: "hafsalodhi2023@gmail.com",
         Password: "CBDA46B74169BB40DA5B3E4FDF0527EEDC5B",
         To: subscriptionFormData.get("email"),
-        From: "info@digpsouthzonekarachi.com",
+        From: "hafsalodhi2023@gmail.com",
         Subject: "THANKS FOR SUBSCRIPTION!",
         Body: emailBody,
       });
