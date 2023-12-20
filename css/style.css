@@ -1103,7 +1103,7 @@ Media for Tablet Small start
     font-weight: 100;
     color: var(--white);
     padding-top: 20px;
-    width: 60.875rem;
+    width: 90%;
     text-align: justify;
   }
 
@@ -1182,3 +1182,217 @@ Media for Tablet Small start
 /*************************************************************************************************
 Media for Tablet Small end
 **************************************************************************************************/
+
+@media only screen and (max-width: 430px) and (min-width: 320px) {
+  html {
+    font-size: 5px;
+  }
+
+  #hero {
+    display: none;
+  }
+
+  #hero-small {
+    /* border: 1px solid #f00; */
+    width: 100%;
+    max-height: 200dvh;
+    min-height: 60dvh;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #hero-small img {
+    width: 20rem;
+    margin: 2rem;
+  }
+
+  #hero-small h1 {
+    font-size: 3.5rem;
+    font-family: var(--main-font);
+    color: var(--white);
+    text-align: center;
+  }
+
+  #hero-small h2 {
+    font-size: 2.5rem;
+    font-family: var(--main-font);
+    color: var(--white);
+    text-align: center;
+  }
+
+  #hero-small h3 {
+    font-size: 3rem;
+    font-family: var(--main-font);
+    color: var(--white);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  #hero-small .fa-bars-staggered {
+    /* border: 1px solid #fff; */
+    color: var(--white);
+    font-size: 5rem;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  #message {
+    /* border: 1px solid #fff; */
+    min-height: auto;
+    padding: 50px 0px;
+
+    flex-direction: column;
+  }
+
+  #message .txt-div {
+    /* border: 1px solid #fff; */
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #message .txt-div h1 {
+    font-size: 4rem;
+    font-family: var(--main-font);
+    color: var(--white);
+  }
+
+  #message .txt-div h2 {
+    font-size: 2.25rem;
+    font-family: var(--sub-font);
+    color: var(--white);
+  }
+
+  #message .txt-div p {
+    /* border: 1px solid #fff; */
+    font-size: 2.125rem;
+    font-family: var(--sub-font);
+    font-weight: 100;
+    color: var(--white);
+    padding-top: 20px;
+    width: 60.875rem;
+    text-align: justify;
+  }
+
+  #message .img-div {
+    /* border: 1px solid #fff; */
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #services {
+    /* border: 1px solid #f00; */
+    min-height: auto;
+  }
+
+  #services .service-div .service {
+    /* border: 1px solid #fff; */
+    background-color: var(--light-blue);
+    width: 33rem;
+    height: 20.625rem;
+    border-radius: 20px;
+    margin-bottom: 1.38rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  #services .service-div .service img {
+    /* border: 1px solid #fff; */
+    width: 5rem;
+  }
+
+  #services .service-div .service h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: var(--sub-font);
+    color: var(--white);
+    text-align: center;
+  }
+
+  #services .service-div .service p {
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: var(--sub-font);
+    text-align: center;
+    color: var(--white);
+  }
+
+  #speakup {
+    /* border: 1px solid #fff; */
+    width: 100%;
+    min-height: auto;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #latest-event {
+    /* border: 1px solid #fff; */
+    min-height: auto;
+  }
+
+  #wcpc-complaint {
+    /* border: 1px solid #fff; */
+    min-height: auto;
+  }
+
+  #police-welfare {
+    /* border: 1px solid #f00; */
+    min-height: 50dvh;
+  }
+
+  #subscribe {
+    /* border: 1px solid #000; */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  #subscribe .subscribe-main-div input {
+    /* border: 1px solid #000; */
+    margin-right: 20px;
+  }
+
+  #footer {
+    /* border: 1px solid #fff; */
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 30px;
+  }
+}
