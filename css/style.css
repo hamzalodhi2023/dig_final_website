@@ -534,11 +534,6 @@ Latest events Section start
   width: 100%;
 }
 
-#latest-event .event-div .event:hover {
-  transform: scale(1.05);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-}
-
 #latest-event .event-div .event .event-txt-div {
   /* border: 1px solid #f00; */
   height: 6.25rem;
@@ -1302,34 +1297,33 @@ Media for Tablet Small end
   #services {
     /* border: 1px solid #f00; */
     min-height: auto;
+    padding-top: 2rem;
+  }
+
+  #services h1 {
+    /* border: 1px solid #fff; */
+    font-size: 5.125rem;
   }
 
   #services .service-div .service {
     /* border: 1px solid #fff; */
     background-color: var(--light-blue);
-    width: 33rem;
-    height: 20.625rem;
+    width: 50rem;
+    height: 30.625rem;
     border-radius: 20px;
     margin-bottom: 1.38rem;
     margin-left: 10px;
     margin-right: 10px;
     padding: 0px 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-    transition: 0.5s;
   }
 
   #services .service-div .service img {
     /* border: 1px solid #fff; */
-    width: 5rem;
+    width: 15rem;
   }
 
   #services .service-div .service h3 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 500;
     font-family: var(--sub-font);
     color: var(--white);
@@ -1337,7 +1331,7 @@ Media for Tablet Small end
   }
 
   #services .service-div .service p {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 300;
     font-family: var(--sub-font);
     text-align: center;
@@ -1354,6 +1348,36 @@ Media for Tablet Small end
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  #speakup .speakup-txt-main-div h1 {
+    /* border: 1px solid #fff; */
+    font-size: 5rem;
+    color: var(--white);
+    font-family: var(--main-font);
+  }
+
+  #speakup .speakup-txt-main-div h3 {
+    /* border: 1px solid #fff; */
+    font-size: 4rem;
+    color: var(--white);
+    font-family: var(--main-font);
+    margin-left: 30px;
+  }
+
+  #speakup .speakup-txt-main-div ul {
+    /* border: 1px solid #fff; */
+    font-size: 2.5rem;
+    color: var(--white);
+    font-family: var(--sub-font);
+    margin-left: 30px;
+  }
+
+  #speakup .speakup-txt-main-div a {
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 2rem;
   }
 
   #latest-event {
