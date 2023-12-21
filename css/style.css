@@ -1550,7 +1550,7 @@ Media for Tablet Small end
 
   #footer img {
     /* border: 1px solid #fff; */
-    width: 3.75rem;
+    width: 15rem;
   }
 
   #footer h1 {
@@ -1591,5 +1591,15 @@ Media for Tablet Small end
     font-size: 2.5rem;
     font-weight: 100;
     margin-bottom: 0.19rem;
+  }
+
+  .hamburger-container ul a li {
+    /* border: 1px solid #fff; */
+    font-size: 4rem;
+  }
+
+  .hamburger-container .fa-xmark {
+    /* border: 1px solid #fff; */
+    font-size: 4rem;
   }
 }
