@@ -1393,6 +1393,11 @@ Media for Tablet Small end
     min-height: auto;
   }
 
+  #latest-event h1 {
+    /* border: 1px solid #fff; */
+    font-size: 8rem;
+  }
+
   #latest-event .event-div .event {
     /* border: 1px solid #fff; */
     background-color: var(--light-blue);
@@ -1403,11 +1408,6 @@ Media for Tablet Small end
     transition: 0.5s;
     margin: 10px;
     overflow: hidden;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
   }
 
   #latest-event .event-div .event img {
@@ -1423,11 +1423,6 @@ Media for Tablet Small end
     font-family: var(--sub-font);
     text-align: center;
     font-size: 3rem;
-    font-weight: 400;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   #wcpc-complaint {
@@ -1466,15 +1461,6 @@ Media for Tablet Small end
   #police-welfare {
     /* border: 1px solid #f00; */
     min-height: 50dvh;
-  }
-
-  #subscribe {
-    /* border: 1px solid #000; */
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
   }
 
   #subscribe .subscribe-main-div input {
