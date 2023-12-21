@@ -1596,6 +1596,7 @@ Media for Tablet Small end
   .hamburger-container ul a li {
     /* border: 1px solid #fff; */
     font-size: 4rem;
+    text-align: center;
   }
 
   .hamburger-container .fa-xmark {
