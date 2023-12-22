@@ -326,9 +326,9 @@ nav .right-div .fa-bars-staggered:hover {
 }
 
 #about-us ul li .about-img-div {
-  /* border: 1px solid #fff; */
-  width: 20vw;
-  height: 100%;
+  border: 1px solid #fff;
+  width: 20rem;
+  height: 20rem;
   border: 7px solid var(--gray);
   border-radius: 100%;
   overflow: hidden;
