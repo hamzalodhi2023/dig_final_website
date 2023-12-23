@@ -1184,7 +1184,7 @@ Media for Tablet Small start
 Media for Tablet Small end
 **************************************************************************************************/
 
-@media only screen and (max-width: 430px) and (min-width: 320px) {
+@media only screen and (max-width: 599px) and (min-width: 320px) {
   html {
     font-size: 5px;
   }
