@@ -1179,6 +1179,23 @@ Media for Tablet Small start
     flex-direction: column;
     padding: 30px;
   }
+
+  #event-popup h3 {
+    font-size: 3rem;
+    font-family: var(--main-font);
+    color: var(--white);
+    text-align: center;
+    margin: 1rem;
+  }
+
+  #event-popup p {
+    font-size: 2rem;
+    font-family: var(--sub-font);
+    color: var(--white);
+    text-align: justify;
+    font-weight: 200;
+    text-align-last: center;
+  }
 }
 /*************************************************************************************************
 Media for Tablet Small end
@@ -1408,7 +1425,7 @@ Media for Tablet Small end
     /* border: 1px solid #fff; */
     background-color: var(--light-blue);
     width: 60rem;
-    height: 40.875rem;
+    height: 45.875rem;
     border-radius: 1.25rem;
     cursor: pointer;
     transition: 0.5s;
@@ -1422,13 +1439,14 @@ Media for Tablet Small end
 
   #latest-event .event-div .event .event-txt-div {
     /* border: 1px solid #f00; */
-    height: 10rem;
+    height: 100%;
     width: 100%;
     border-radius: 0rem 0rem 1.25rem 1.25rem;
     color: var(--white);
     font-family: var(--sub-font);
     text-align: center;
     font-size: 3rem;
+    padding: 0px 20px;
   }
 
   #wcpc-complaint {
@@ -1598,15 +1616,41 @@ Media for Tablet Small end
     font-weight: 100;
     margin-bottom: 0.19rem;
   }
-  /* 
-  .hamburger-container ul a li {
-    border: 1px solid #fff;
-    font-size: 4rem;
-    text-align: center;
+
+  #event-popup {
+    justify-content: center;
   }
 
-  .hamburger-container .fa-xmark {
-    border: 1px solid #fff;
+  #event-popup img {
+    width: 50rem;
+  }
+
+  #event-popup h3 {
+    font-size: 3rem;
+    font-family: var(--main-font);
+    color: var(--white);
+    text-align: center;
+    margin: 1rem;
+  }
+
+  #event-popup p {
+    font-size: 2rem;
+    font-family: var(--sub-font);
+    color: var(--white);
+    text-align: justify;
+    font-weight: 200;
+    text-align-last: center;
+  }
+
+  #event-popup .fa-xmark {
+    /* border: 1px solid #fff; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--white);
     font-size: 4rem;
-  } */
+    padding: 10px;
+    transition: 0.6s;
+    cursor: pointer;
+  }
 }
