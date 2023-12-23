@@ -6,3 +6,19 @@ https://script.google.com/macros/s/AKfycbzzv4sMmOGoEXYvw83Ndi2fPyOSa9j6mx5klbAVl
 WCPC Complaint Deployment ID:
 
 https://script.google.com/macros/s/AKfycbyNKo4OwsMuj5lxT0sK4MpbnilXEWW4cneUnMJUFGpIi7nkFsI9E0dsOezAciV9Vv19HQ/exec
+
+SMTP Server Encryption key
+4578C9D116FB02F7CA9B97EF93747F360EDD
+
+SMTP Server Username
+info@digpsouthzonekarachi.com
+
+SMTP Server Password
+$Karachi@1947
+
+SMTP Server Domain
+www.digpsouthzonekarachi.com
+
+
+
+
