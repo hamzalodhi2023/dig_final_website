@@ -52,7 +52,7 @@ body a {
 
 .hamburger-container i {
   /* border: 1px solid #fff; */
-  font-size: 2rem;
+  font-size: 4rem;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -70,7 +70,7 @@ body a {
 .hamburger-container ul {
   /* border: 1px solid #fff; */
   height: 100%;
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -82,7 +82,7 @@ body a {
   list-style: none;
   color: var(--white);
   font-family: var(--main-font);
-  font-size: 2rem;
+  font-size: 4rem;
   padding: 6px;
   position: relative;
   transition: 0.9s;
@@ -330,7 +330,7 @@ Message Section start
   /* border: 1px solid #fff; */
   width: 100%;
   min-height: 100dvh;
-  background-image: url(../images/Message\ background.png);
+  background-image: url(../images/Message\ background.webp);
   background-position: 60%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -530,13 +530,14 @@ Latest events Section start
   flex-direction: column;
 }
 
-#latest-event .event-div .event img {
-  width: 100%;
+#latest-event .event-div .event:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.02);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
-#latest-event .event-div .event:hover {
-  transform: scale(1.05);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+#latest-event .event-div .event img {
+  width: 100%;
 }
 
 #latest-event .event-div .event .event-txt-div {
@@ -711,7 +712,7 @@ wcpc complaint Section start
 
 #wcpc-complaint .wcpc-txt-main-div p {
   /* border: 1px solid #fff; */
-  font-size: 1rem;
+  font-size: 1.5rem;
   width: 30rem;
   color: var(--white);
   font-family: var(--sub-font);
@@ -853,8 +854,8 @@ Police Welfare complaint Section start
 
 .police-welfare-image-div img {
   object-fit: contain;
-  width: 100%;
-  height: 100%;
+  width: 75%;
+  height: 75%;
 }
 
 #police-welfare .police-welfare-txt-main-div {
@@ -1004,7 +1005,7 @@ Media for Desktop devices  end
 /*************************************************************************************************
 Media for Tablet Small start
 **************************************************************************************************/
-@media only screen and (max-width: 768px) and (min-width: 600px) {
+@media only screen and (max-width: 834px) and (min-width: 600px) {
   html {
     font-size: 10px;
   }
@@ -1103,7 +1104,7 @@ Media for Tablet Small start
     font-weight: 100;
     color: var(--white);
     padding-top: 20px;
-    width: 60.875rem;
+    width: 90%;
     text-align: justify;
   }
 
@@ -1178,7 +1179,478 @@ Media for Tablet Small start
     flex-direction: column;
     padding: 30px;
   }
+
+  #event-popup h3 {
+    font-size: 3rem;
+    font-family: var(--main-font);
+    color: var(--white);
+    text-align: center;
+    margin: 1rem;
+  }
+
+  #event-popup p {
+    font-size: 2rem;
+    font-family: var(--sub-font);
+    color: var(--white);
+    text-align: justify;
+    font-weight: 200;
+    text-align-last: center;
+  }
 }
 /*************************************************************************************************
 Media for Tablet Small end
 **************************************************************************************************/
+
+@media only screen and (max-width: 599px) and (min-width: 320px) {
+  html {
+    font-size: 5px;
+  }
+
+  #hero {
+    display: none;
+  }
+
+  #hero-small {
+    /* border: 1px solid #f00; */
+    width: 100%;
+    max-height: 200dvh;
+    min-height: 60dvh;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #hero-small img {
+    width: 20rem;
+    margin: 2rem;
+  }
+
+  #hero-small h1 {
+    font-size: 5.5rem;
+    font-family: var(--main-font);
+    color: var(--white);
+    text-align: center;
+  }
+
+  #hero-small h2 {
+    font-size: 3.5rem;
+    font-family: var(--main-font);
+    color: var(--white);
+    text-align: center;
+  }
+
+  #hero-small h3 {
+    font-size: 4rem;
+    font-family: var(--main-font);
+    color: var(--white);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .social {
+    /* border: 1px solid #000; */
+    font-size: 3.1875rem;
+    width: 6.125rem;
+    height: 6.125rem;
+    margin: 0.56rem;
+  }
+
+  #hero-small .fa-bars-staggered {
+    /* border: 1px solid #fff; */
+    color: var(--white);
+    font-size: 5rem;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  #message {
+    /* border: 1px solid #fff; */
+    min-height: auto;
+    padding: 50px 0px;
+
+    flex-direction: column;
+  }
+
+  #message .txt-div {
+    /* border: 1px solid #fff; */
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #message .txt-div h1 {
+    font-size: 5.5rem;
+    font-family: var(--main-font);
+    color: var(--white);
+  }
+
+  #message .txt-div h2 {
+    font-size: 4.25rem;
+    font-family: var(--sub-font);
+    color: var(--white);
+  }
+
+  #message .txt-div p {
+    /* border: 1px solid #fff; */
+    font-size: 3.125rem;
+    font-family: var(--sub-font);
+    font-weight: 100;
+    color: var(--white);
+    padding-top: 20px;
+    width: 60.875rem;
+    text-align: justify;
+  }
+
+  #message .img-div {
+    /* border: 1px solid #fff; */
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #services {
+    /* border: 1px solid #f00; */
+    min-height: auto;
+    padding-top: 2rem;
+  }
+
+  #services h1 {
+    /* border: 1px solid #fff; */
+    font-size: 7.125rem;
+  }
+
+  #services .service-div .service {
+    /* border: 1px solid #fff; */
+    background-color: var(--light-blue);
+    width: 55rem;
+    height: 35.625rem;
+    border-radius: 20px;
+    margin-bottom: 2.38rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px 40px;
+  }
+
+  #services .service-div .service img {
+    /* border: 1px solid #fff; */
+    width: 15rem;
+  }
+
+  #services .service-div .service h3 {
+    font-size: 7rem;
+    font-weight: 500;
+    font-family: var(--sub-font);
+    color: var(--white);
+    text-align: center;
+  }
+
+  #services .service-div .service p {
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-family: var(--sub-font);
+    text-align: center;
+    color: var(--white);
+  }
+
+  #speakup {
+    /* border: 1px solid #fff; */
+    width: 100%;
+    min-height: auto;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #speakup .speakup-txt-main-div h1 {
+    /* border: 1px solid #fff; */
+    font-size: 5rem;
+    color: var(--white);
+    font-family: var(--main-font);
+  }
+
+  #speakup .speakup-txt-main-div h3 {
+    /* border: 1px solid #fff; */
+    font-size: 4rem;
+    color: var(--white);
+    font-family: var(--main-font);
+    margin-left: 30px;
+  }
+
+  #speakup .speakup-txt-main-div ul {
+    /* border: 1px solid #fff; */
+    font-size: 2.5rem;
+    color: var(--white);
+    font-family: var(--sub-font);
+    margin-left: 30px;
+  }
+
+  #speakup .speakup-txt-main-div a {
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 2rem;
+  }
+
+  #latest-event {
+    /* border: 1px solid #fff; */
+    min-height: auto;
+  }
+
+  #latest-event h1 {
+    /* border: 1px solid #fff; */
+    font-size: 8rem;
+  }
+
+  #latest-event .event-div .event {
+    /* border: 1px solid #fff; */
+    background-color: var(--light-blue);
+    width: 60rem;
+    height: 45.875rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  #latest-event .event-div .event img {
+    width: 100%;
+  }
+
+  #latest-event .event-div .event .event-txt-div {
+    /* border: 1px solid #f00; */
+    height: 100%;
+    width: 100%;
+    border-radius: 0rem 0rem 1.25rem 1.25rem;
+    color: var(--white);
+    font-family: var(--sub-font);
+    text-align: center;
+    font-size: 3rem;
+    padding: 0px 20px;
+  }
+
+  #wcpc-complaint {
+    /* border: 1px solid #fff; */
+    min-height: auto;
+  }
+
+  #wcpc-complaint .wcpc-txt-main-div p {
+    /* border: 1px solid #fff; */
+    font-size: 2rem;
+    width: 30rem;
+    color: var(--white);
+    font-family: var(--sub-font);
+  }
+
+  #wcpc-complaint .wcpc-txt-main-div h1 {
+    /* border: 1px solid #fff; */
+    font-size: 5rem;
+    color: var(--white);
+    font-family: var(--main-font);
+  }
+
+  #wcpc-complaint .wcpc-txt-main-div h3 {
+    /* border: 1px solid #fff; */
+    font-size: 3rem;
+    color: var(--white);
+    font-family: var(--main-font);
+  }
+
+  #wcpc-complaint .wcpc-txt-main-div a {
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 2rem;
+  }
+
+  #police-welfare {
+    /* border: 1px solid #f00; */
+    min-height: auto;
+  }
+
+  .police-welfare-image-div {
+    /* border: 1px solid #f00; */
+    width: 40%;
+    height: 100%;
+  }
+
+  #police-welfare .police-welfare-txt-main-div {
+    /* border: 1px solid #f00; */
+    width: 60%;
+    height: 100%;
+    padding-left: 2%;
+  }
+
+  #police-welfare .police-welfare-txt-main-div ul {
+    /* border: 1px solid #fff; */
+    font-size: 1.8rem;
+    margin-left: 10px;
+  }
+
+  #police-welfare .police-welfare-txt-main-div h1 {
+    /* border: 1px solid #fff; */
+    font-size: 3.5rem;
+  }
+
+  #police-welfare .police-welfare-txt-main-div a {
+    padding: 5px auto;
+    font-size: 2.5rem;
+  }
+
+  #subscribe {
+    /* border: 1px solid #000; */
+    height: auto;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  #subscribe .subscribe-main-div form {
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+  }
+
+  #subscribe .subscribe-main-div input {
+    width: 100rem;
+    height: 3.5rem;
+    border-radius: 0.625rem;
+    border: none;
+    outline: none;
+    font-family: Inter;
+    font-size: 2rem;
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+
+  #subscribe .subscribe-main-div button {
+    /* border: 1px solid #000; */
+    border: 1px solid var(--button-hover);
+    outline: none;
+    background-color: transparent;
+    margin: 0;
+    font-family: var(--sub-font);
+    font-size: 1.875rem;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 5px 30px;
+
+    position: relative;
+  }
+
+  #footer {
+    /* border: 1px solid #fff; */
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  #footer img {
+    /* border: 1px solid #fff; */
+    width: 15rem;
+  }
+
+  #footer h1 {
+    /* border: 1px solid #fff; */
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: var(--main-font);
+    color: var(--white);
+    margin-bottom: 0.19rem;
+  }
+
+  #footer h2 {
+    /* border: 1px solid #fff; */
+    font-size: 5rem;
+    font-weight: 500;
+    text-align: center;
+    font-family: var(--main-font);
+    color: var(--white);
+    margin-bottom: 0.19rem;
+  }
+
+  #footer h3 {
+    /* border: 1px solid #fff; */
+    font-size: 3rem;
+    font-weight: 200;
+    text-align: center;
+    font-family: var(--main-font);
+    color: var(--white);
+    margin-bottom: 0.19rem;
+  }
+
+  #footer p {
+    /* border: 1px solid #fff; */
+    text-align: center;
+    color: var(--white);
+    font-family: var(--sub-font);
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 0.19rem;
+  }
+
+  #event-popup {
+    justify-content: center;
+  }
+
+  #event-popup img {
+    width: 50rem;
+  }
+
+  #event-popup h3 {
+    font-size: 3rem;
+    font-family: var(--main-font);
+    color: var(--white);
+    text-align: center;
+    margin: 1rem;
+  }
+
+  #event-popup p {
+    font-size: 2rem;
+    font-family: var(--sub-font);
+    color: var(--white);
+    text-align: justify;
+    font-weight: 200;
+    text-align-last: center;
+  }
+
+  #event-popup .fa-xmark {
+    /* border: 1px solid #fff; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--white);
+    font-size: 4rem;
+    padding: 10px;
+    transition: 0.6s;
+    cursor: pointer;
+  }
+}
