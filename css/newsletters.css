@@ -251,6 +251,50 @@ nav .right-div .fa-bars-staggered {
 nav .right-div .fa-bars-staggered:hover {
   color: var(--button-hover);
 }
+
+.news-card-main-div {
+  /* border: 1px solid #fff; */
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.news-card-main-div .card-div {
+  /* border: 1px solid #fff; */
+  width: 20rem;
+  height: 30rem;
+  margin: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.news-card-main-div .card-div img {
+  /* border: 1px solid #fff; */
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.news-card-main-div .card-div h2 {
+  /* border: 1px solid #fff; */
+  height: 10%;
+  width: 100%;
+  font-size: 2rem;
+  font-family: var(--main-font);
+  color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 780px) and (min-width: 320px) {
   html {
     font-size: 12px;
