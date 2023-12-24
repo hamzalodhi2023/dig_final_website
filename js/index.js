@@ -146,10 +146,10 @@ subscriptionForm.addEventListener("submit", (e) => {
 
       Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "hafsalodhi2023@gmail.com",
-        Password: "CBDA46B74169BB40DA5B3E4FDF0527EEDC5B",
+        Username: "info@digpsouthzonekarachi.com",
+        Password: "4578C9D116FB02F7CA9B97EF93747F360EDD",
         To: subscriptionFormData.get("email"),
-        From: "hafsalodhi2023@gmail.com",
+        From: "info@digpsouthzonekarachi.com",
         Subject: "THANKS FOR SUBSCRIPTION!",
         Body: emailBody,
       });
