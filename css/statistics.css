@@ -530,9 +530,10 @@ nav .right-div .fa-bars-staggered:hover {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (max-width: 3840px) and (min-width: 1281px) {
   .a {
     display: none;
+    border: 1px solid #fff;
   }
 }
 
