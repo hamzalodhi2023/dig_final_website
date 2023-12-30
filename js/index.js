@@ -43,6 +43,16 @@ let popupAbout = popup.querySelector("p");
  * Latest Events Popup Variables End
  ****************************************************************/
 /****************************************************************
+ *  Website Starting Popup Variables Start
+ ****************************************************************/
+
+let popupWindow = document.querySelector("#pop-up-window");
+let popupWindowClosingIcon = popupWindow.querySelector("i");
+
+/****************************************************************
+ * Website Starting Popup Variables End
+ ****************************************************************/
+/****************************************************************
  *  Subscription Form Data Sending in Google Sheets Variables Start
  ****************************************************************/
 
@@ -169,4 +179,19 @@ subscriptionForm.addEventListener("submit", (e) => {
 
 /****************************************************************
  * Subscription Form Data Sending in Google Sheets Logic End
+ ****************************************************************/
+/****************************************************************
+ *  Website Starting Popup Logic Start
+ ****************************************************************/
+
+setTimeout(function () {
+  popupWindow.style.top = "0%";
+}, 5000);
+
+popupWindowClosingIcon.addEventListener("click", function () {
+  popupWindow.style.top = "100%";
+});
+
+/****************************************************************
+ *  Website Starting Popup Logic End
  ****************************************************************/
